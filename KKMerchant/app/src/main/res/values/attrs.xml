@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginRichEditText">
+        <attr name="ret_hint" format="string" />
+        <attr name="ret_with_clean" format="boolean" />
+        <attr name="ret_with_eye" format="boolean" />
+        <attr name="ret_icon" format="reference" />
+        <attr name="ret_max_length" format="integer"/>
+        <attr name="ret_max_lines" format="integer"/>
+        <attr name="ret_input_type">
+            <flag name="none" value="0x00000000" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textCapCharacters" value="0x00001001" />
+            <flag name="textCapWords" value="0x00002001" />
+            <flag name="textCapSentences" value="0x00004001" />
+            <flag name="textAutoCorrect" value="0x00008001" />
+            <flag name="textAutoComplete" value="0x00010001" />
+            <flag name="textMultiLine" value="0x00020001" />
+            <flag name="textImeMultiLine" value="0x00040001" />
+            <flag name="textNoSuggestions" value="0x00080001" />
+            <flag name="textUri" value="0x00000011" />
+            <flag name="textEmailAddress" value="0x00000021" />
+            <flag name="textEmailSubject" value="0x00000031" />
+            <flag name="textShortMessage" value="0x00000041" />
+            <flag name="textLongMessage" value="0x00000051" />
+            <flag name="textPersonName" value="0x00000061" />
+            <flag name="textPostalAddress" value="0x00000071" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="textVisiblePassword" value="0x00000091" />
+            <flag name="textWebEditText" value="0x000000a1" />
+            <flag name="textFilter" value="0x000000b1" />
+            <flag name="textPhonetic" value="0x000000c1" />
+            <flag name="textWebEmailAddress" value="0x000000d1" />
+            <flag name="textWebPassword" value="0x000000e1" />
+            <flag name="number" value="0x00000002" />
+            <flag name="numberSigned" value="0x00001002" />
+            <flag name="numberDecimal" value="0x00002002" />
+            <flag name="numberPassword" value="0x00000012" />
+            <flag name="phone" value="0x00000003" />
+            <flag name="datetime" value="0x00000004" />
+            <flag name="date" value="0x00000014" />
+            <flag name="time" value="0x00000024" />
+        </attr>
+
+    </declare-styleable>
+
+    <attr name="round" format="boolean" />
+    <attr name="roundColor" format="color" />
+    <attr name="zoomSize" format="float" />
+    <attr name="zoomWidth" format="float" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textColor" format="color" />
+    <attr name="text" format="string"/>
+    <attr name="corner" format="boolean" />
+    <attr name="autoZoom" format="boolean" />
+
+    <declare-styleable name="BannerView">
+        <attr name="indicator" format="reference"/>
+        <attr name="showIndicator" format="boolean"/>
+        <attr name="pageMargin" format="dimension" />
+        <attr name="indicator_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30" />
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50" />
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03" />
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05" />
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10" />
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70" />
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01" />
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07" />
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11" />
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77" />
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80" />
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08" />
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003" />
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="corner"/>
+    </declare-styleable>
+    <declare-styleable name="ZoomFrameLayout">
+        <attr name="zoomSize" />
+        <attr name="zoomWidth" />
+    </declare-styleable>
+    <declare-styleable name="XGridView">
+        <attr name="hasGridLineBg" format="boolean" />
+        <attr name="gridOffset" format="dimension" />
+        <attr name="rowBackground" format="reference" />
+        <attr name="drawPosition">
+            <flag name="center" value="-1" />
+            <flag name="bottom" value="-2" />
+            <flag name="top" value="-4" />
+        </attr>
+        <attr name="left" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StickyListHeadersListView">
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="XRoundProgressBar">
+        <attr name="max" format="integer" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundColor" />
+        <attr name="roundBgColor" format="color" />
+        <attr name="hasProgressText" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AutoTextView">
+        <attr name="textSize" />
+        <attr name="textColor" />
+    </declare-styleable>
+    <declare-styleable name="XTextView">
+        <attr name="debugText" format="string" />
+        <attr name="minTextSize" format="dimension" />
+        <attr name="maxTextSize" format="dimension" />
+        <attr name="autoZoom" />
+    </declare-styleable>
+
+    <declare-styleable name="clear_edit_attrs">
+        <attr name="input_type" format="enum">
+            <enum name="phone" value="0"/>
+            <enum name="card" value="1"/>
+            <enum name="IDcard" value="2"/>
+        </attr>
+        <!--<attr name="use_bank_num_mode" format="boolean"  />-->
+        <!--<attr name="scan_bank_click" format="boolean"  />-->
+    </declare-styleable>
+
+    <declare-styleable name="BottomTabItem">
+        <attr name="item_num" format="integer" />
+        <attr name="item_text_selected_color" format="color" />
+        <attr name="item_text_unselected_color" format="color" />
+    </declare-styleable>
+
+</resources>

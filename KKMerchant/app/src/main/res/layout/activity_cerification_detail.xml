@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.ftas.ftaswidget.view.RecyclerScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/bg_color_green"
+            android:gravity="center"
+            android:text="核销成功"
+            android:textColor="@color/text_color_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:text="商品信息"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="14sp" />
+
+        <top.ftas.ftaswidget.view.MaxRecyclerView
+            android:id="@+id/goods_info_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:text="核销信息"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cerification_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="14dp"
+                android:text="核销时间:"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cerification_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/cerification_time_title"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/certification_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/cerification_date"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerification_time_title"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="14dp"
+                android:text="用户信息:"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerification_time_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/user_info_title"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cerification_person_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_info_title"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="14dp"
+                android:text="核销人员:"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cerification_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_info_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/cerification_person_title"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/order_num_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerification_person_title"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="11dp"
+                android:paddingLeft="14dp"
+                android:text="订单编号:"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerification_person_title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/order_num_title"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</top.ftas.ftaswidget.view.RecyclerScrollview>

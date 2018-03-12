@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_public_account"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bg_while">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:text="@string/public_account"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/public_account_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="14dp"
+            android:src="@mipmap/checked_blue_icon" />
+
+        <View
+            style="@style/line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_private_account"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/rl_public_account"
+        android:background="@color/bg_while">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:text="@string/private_account"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/private_account_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="14dp"
+            android:src="@mipmap/unchecked" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_quit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/quit"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>

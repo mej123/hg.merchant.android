@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.ftas.ftaswidget.view.RecyclerScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <top.ftas.ftaswidget.view.MaxRecyclerView
+        android:id="@+id/base_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</top.ftas.ftaswidget.view.RecyclerScrollview>

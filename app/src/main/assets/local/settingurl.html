@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<style type="text/css">
+.button {
+	width: 200px;
+	height: 60px;
+	margin-top: 20px;
+	display: block;
+}
+</style>
+</head>
+<body>
+<input type="button" id="nextPageWithUrlBtn" class="button" value="打开新界面">
+<script type="text/javascript">
+
+	function promptWindow(defValue){
+		if(!defValue){
+			defValue = "http://192.168.0.199:8080/hg/test-kkjs.html";
+		}
+		var value = prompt("你要去哪里？",defValue);
+		if(value == null || value == ""){
+			alert("您输入的为：" + value + "\t我不知道你要到哪里去啊！！！");
+			return;
+		}
+		
+		KuKuJSBridge.invoke("setPreferences",{
+			key : "testurl",
+			value : value
+		},callback);
+		
+		var action = "nextPageWithUrl";
+		var params = {
+				url : value
+		};
+		var callback = function(msg){
+			//alert( "回调成功\nmsg.data："　+　msg.data + "\nresult_code:" + msg.result_code + "\nerror_code:" + msg.error_code + "\nerror_message:" + msg.error_message );
+		};
+		KuKuJSBridge.invoke(action,params,callback);
+		//alert("结果为：" + value);
+	}
+
+	var nextPageWithUrlBtn = document.getElementById("nextPageWithUrlBtn");
+	nextPageWithUrlBtn.onclick = function(){
+		var action = "getPreferences";
+		var params = {
+				key : "testurl",
+				defValue : "http://192.168.0.199:8080/hg/test-kkjs.html"
+		};
+		var callback = function(msg){
+			//alert( "回调成功\nmsg.data："　+　msg.data + "\nresult_code:" + msg.result_code + "\nerror_code:" + msg.error_code + "\nerror_message:" + msg.error_message );
+			promptWindow(msg.data);
+		};
+		KuKuJSBridge.invoke(action,params,callback);
+	}
+</script>
+</body>
+</html>

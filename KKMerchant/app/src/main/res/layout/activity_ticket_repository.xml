@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/repository_no_limited"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/repository_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/checkbox_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/repository_num_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/bg_color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/ticket_store_num"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ticket_num"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_text_white_bg"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="@string/set_ticket_num"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/text_color_light_black"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/repository_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/repository_select_bg_selector"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/ticket_repository_select_color"
+        android:textSize="16sp" />
+</LinearLayout>

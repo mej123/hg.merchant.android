@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white"
+    android:paddingBottom="15dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="15dp">
+
+
+    <TextView
+        android:id="@+id/meal_num_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/table_num_icon"
+        android:drawablePadding="6dp"
+        android:text="@string/table_number_title"
+        android:textColor="@color/xtab_default"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/table_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/meal_num_title"
+        android:textColor="@color/xtab_default"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/meal_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meal_num_title"
+        android:layout_marginTop="11dp"
+        android:drawableLeft="@mipmap/advance_icon"
+        android:drawablePadding="6dp"
+        android:text="@string/order_time"
+        android:textColor="@color/xtab_default"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meal_num_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/meal_time_title"
+        android:textColor="@color/xtab_default"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meal_num_title"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/order_date"
+        android:textColor="@color/xtab_default"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/top_actionbar_bg_color" />
+
+            <include
+                android:id="@+id/item_choose_ticket"
+                layout="@layout/item_choose_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <View
+                android:id="@+id/send_info_tag"
+                android:layout_width="5dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@color/text_color_blue_6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/send_info_tag"
+                android:text="@string/send_info"
+                android:textColor="@color/text_color_gray_6"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/get_ticket_create_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/create_time_title"
+                android:textColor="@color/text_color_gray_8"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/get_ticket_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/get_ticket_create_time_title"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/close_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/get_ticket_close_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/close_time_title"
+                android:textColor="@color/text_color_gray_8"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/get_ticket_close_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/get_ticket_close_time_title"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ticket_store_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/ticket_store_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/ticket_store"
+                android:textColor="@color/text_color_gray_8"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/ticket_store"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/ticket_store_title"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ticket_cost_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/ticket_cost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/ticket_cost_title"
+                android:textColor="@color/text_color_gray_8"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/ticket_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/ticket_cost_title"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ticket_award_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/ticket_award_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/ticket_award"
+                android:textColor="@color/text_color_gray_8"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/ticket_award"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/ticket_award_title"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bg_color_white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/cancel_release"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/top_actionbar_bg_color"
+            android:gravity="center"
+            android:text="@string/cancel_release"
+            android:textColor="@color/text_color_white"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>
+
+
+

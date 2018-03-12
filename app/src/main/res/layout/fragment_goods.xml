@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/goods_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/goods_option_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="全部"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/goods_option_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:src="@mipmap/towards_down" />
+    </LinearLayout>
+
+    <!-- 商品列表 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/goods_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+</LinearLayout>

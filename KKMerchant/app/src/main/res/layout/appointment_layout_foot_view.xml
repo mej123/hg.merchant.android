@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="107dp">
+
+<TextView
+    android:paddingTop="39dp"
+    android:paddingBottom="54dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/appointment_foot_message"
+    android:textColor="#7f8a95"
+    android:textSize="14sp"
+    />/>
+</RelativeLayout>

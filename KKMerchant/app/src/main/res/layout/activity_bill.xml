@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_while"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/revenue_total_bg"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/total_revenue_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@mipmap/revenue_total_icon"
+                android:drawablePadding="9dp"
+                android:text="@string/total_revenue"
+                android:textColor="@color/bg_while"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/total_revenue_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_revenue_hint"
+                android:layout_marginTop="9dp"
+                android:paddingBottom="18dp"
+                android:textColor="@color/bg_while"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@mipmap/revenue_advance_bg"
+            android:paddingLeft="14dp">
+
+
+            <TextView
+                android:id="@+id/advance_input_bill_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@mipmap/revenue_advance_icon"
+                android:drawablePadding="9dp"
+                android:gravity="center_vertical"
+                android:text="@string/advace_input_bill"
+                android:textColor="#485057"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/advance_input_bill_hint"
+                android:text="@string/advance_input_bill_time"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/tv_advance_entry_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/advance_input_bill_hint"
+                android:layout_marginTop="9dp"
+                android:paddingBottom="18dp"
+
+                android:textColor="#485057"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_while"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:text="@string/wait_calculate_bill"
+        android:textColor="#1f2427"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_wait_calculate_bill_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_while">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e9ed" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_already_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="11dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_while"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:text="@string/already_calculate_bill"
+            android:textColor="#1f2427"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"
+            android:src="@mipmap/arrow_right" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kuku.kkmerchant">
+
+    <application
+        android:name=".ClientApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!---->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".test.activity.TestWithWebViewActivity" />
+
+        <activity android:name="top.ftas.dunit.activity.DUnitSimpleListActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN"/>-->
+            <!--<category android:name="android.intent.category.LAUNCHER"/>-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name="top.ftas.dunit.activity.SingleFragmentActivity" />
+        <activity android:name="top.ftas.dunit.activity.SingleSupportFragmentActivity" />
+
+        <activity
+            android:name="com.hg.ftas.activity.ftas.ftasview.FtasMobileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.hg.ftas.activity.ftas.FtasFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+        <activity android:name=".LoginMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".loginorregist.PhoneVerifyActivity" />
+
+        <activity android:name=".loginorregist.ForgetPswActivity" />
+        <activity android:name=".loginorregist.ResetPswActivity" />
+        <activity android:name=".loginorregist.RegistActivity" />
+        <activity android:name=".MainPageActivity"  />
+        <activity android:name=".ordermeal.StoreTablesActivity" />
+        <activity android:name=".ordermeal.TakeDetailsActivity" />
+        <activity android:name=".ordermeal.AdvaceOrderDeticalActivity" />
+        <activity android:name=".ordermeal.AdvaceOrderActivity" />
+        <activity android:name=".swiperecycleviewtwo.MsgRemindActivity" />
+        <activity
+            android:name=".store.StoreGoodsEditActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.kuku.kkmerchant.activity.TableBoxActivity"  />
+
+    </application>
+
+</manifest>

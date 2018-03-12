@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white">
+
+
+    <RelativeLayout
+        android:id="@+id/store_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp">
+
+        <ImageView
+            android:id="@+id/store_logo"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:src="@mipmap/avatar_placeholder_icon" />
+
+        <ImageView
+            android:id="@+id/store_select"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@id/store_logo"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/checked_blue_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/store_mine"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/store_logo_layout"
+        android:drawableLeft="@mipmap/my_store"
+        android:drawablePadding="9px"
+        android:gravity="center_vertical"
+        android:text="@string/my_house"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/other_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/store_logo_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/store_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/role_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:background="@color/app_divder_color" />
+</RelativeLayout>

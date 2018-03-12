@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <!-- android:background="@color/top_actionbar_bg_color"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:background="@mipmap/main_page_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="20sp" />
+
+                <!--  android:drawablePadding="8dp"
+                  android:drawableRight="@mipmap/arrow_dir_bottom"-->
+
+                <ImageView
+                    android:id="@+id/scan_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/small_scan_icon" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/purchase_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/purchase_checkout_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/purchase_checkout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/purchase_checkout_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/purchase_checkout"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/order_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="152dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/receive_info_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/order_info_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receive_info_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/order_info"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <top.ftas.ftaswidget.view.RecyclerScrollview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <top.ftas.ftaswidget.view.MaxRecyclerView
+            android:id="@+id/main_page_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_white" />
+
+    </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+    <RelativeLayout
+        android:id="@+id/store_open_layout"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bg_color_white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/store_num_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp">
+
+
+            <TextView
+                android:id="@+id/store_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_black_7"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/store_num"
+                android:text="@string/is_opening"
+                android:textColor="@color/text_color_gray_8"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/store_look"
+            android:layout_width="79dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/store_num_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/click_look_shape"
+            android:gravity="center"
+            android:text="@string/click_look"
+            android:textColor="@color/text_color_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

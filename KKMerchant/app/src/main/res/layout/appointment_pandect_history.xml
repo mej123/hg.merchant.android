@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xTablayout"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:background="@drawable/custom_btn_bg_enabled_blue_noradius_tablayout"
+        app:xTabDisplayNum="2"
+        app:xTabDividerColor="#000"
+        app:xTabDividerGravity="center"
+        app:xTabDividerHeight="0dp"
+        app:xTabDividerWidth="0dp"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/white"
+        app:xTabSelectedTextSize="16sp"
+        app:xTabTextColor="#70ffffff"
+        app:xTabTextSize="16sp"
+
+        />
+    <!--app:xTabDividerHeight="15dp"-->
+    <!--app:xTabDividerColor="#000"-->
+    <!--app:xTabTextSelectedBold="true"-->
+    <!--app:xTabTextBold="true"-->
+    <!-- 设置选中Tab的文本是否粗体显示-->
+    <!--app:xTabTextSelectedBold="true"-->
+    <!-- 设置未选中Tab的文本是否粗体显示-->
+    <!--app:xTabTextBold="true"-->
+
+
+    <top.ftas.ftaswidget.viewpager.NonSwipeableViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>  

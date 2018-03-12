@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_hui"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/select_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="14sp" />
+
+        <com.zishan.sardinemerchant.view.XTextView
+            android:id="@+id/order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|end"
+            android:paddingRight="14dp"
+            android:text="共 sBigeFontsBlue0eBig 笔预约"
+            android:textColor="@color/appointment"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e3e9ed"
+        />
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:visibility="gone"
+        android:id="@+id/pandect_received_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/pandect_received_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </top.ftas.ftaswidget.springview.SpringView>
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/store_manage_empty_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="@string/no_goods"
+            android:textColor="@color/text_color_unselected_tab_main"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="24dp"
+            android:background="@mipmap/store_manage_empty_button"
+            android:gravity="center"
+            android:text="@string/add_goods"
+            android:textColor="@color/text_color_white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

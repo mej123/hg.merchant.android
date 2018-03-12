@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/table_type_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/table_type_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp" />
+    </top.ftas.ftaswidget.springview.SpringView>
+
+    <LinearLayout
+        android:id="@+id/table_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/store_manage_empty_icon" />
+
+        <TextView
+            android:id="@+id/no_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_unselected_tab_main"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="24dp"
+            android:background="@mipmap/store_manage_empty_button"
+            android:gravity="center"
+            android:text="@string/add_table"
+            android:textColor="@color/text_color_white"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

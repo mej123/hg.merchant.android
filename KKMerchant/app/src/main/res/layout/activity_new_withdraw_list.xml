@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/withdrawList_spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_withdraw_detail_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </top.ftas.ftaswidget.springview.SpringView>
+
+    <LinearLayout
+        android:id="@+id/withdraw_list_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_while"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/empty_data_icon"
+            android:layout_width="170dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="177dp"
+            android:src="@drawable/my_account_no_data_bg_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_data_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="@string/new_no_withdraw_message"
+            android:textColor="@color/stroke_color_light_coffee"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

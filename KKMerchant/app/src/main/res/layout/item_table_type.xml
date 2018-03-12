@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.ftas.ftaswidget.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white">
+
+    <RelativeLayout
+        android:id="@+id/table_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp">
+
+        <TextView
+            android:id="@+id/table_name"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/table_person_count"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="14dp"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_divder_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/table_delete"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color_red"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/bg_color_white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</top.ftas.ftaswidget.recyclerview.SwipeItemLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_gray">
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/cancel"
+            android:textColor="@color/text_color_dark_blue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dialog_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_dark_blue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/text_color_black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/date_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/from_to"
+            android:textColor="@color/text_color_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/date_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <top.ftas.ftaswidget.view.WheelView
+            android:id="@+id/wheel_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="#e3e9ed"
+            app:lineHeight="1dp"
+            app:noEmpty="true"
+            app:normalTextColor="#b9b9b9"
+            app:normalTextSize="14sp"
+            app:selectedTextColor="#333333"
+            app:selectedTextSize="16sp"
+            app:unitHeight="33dp" />
+
+
+        <top.ftas.ftaswidget.view.WheelView
+            android:id="@+id/wheel_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="#e3e9ed"
+            app:lineHeight="1dp"
+            app:noEmpty="true"
+            app:normalTextColor="#b9b9b9"
+            app:normalTextSize="14sp"
+            app:selectedTextColor="#333333"
+            app:selectedTextSize="16sp"
+            app:unitHeight="33dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+include ':ftasbase'
+project(':ftasbase').projectDir = new File('../../hg.common.android/FtasBase/ftasbase')
+include ':ftaswidget'
+project(':ftaswidget').projectDir = new File('../../hg.common.android/FtasWidget/ftaswidget')
+/*include ':kuKuGameSdkAppModule'
+project(':kuKuGameSdkAppModule').projectDir = new File('../../hg.gamesdk.android/KuKuGameSdk/app')*/
+include ':kuKuJSBridgeAppModule'
+project(':kuKuJSBridgeAppModule').projectDir = new File('../../hg.common.android/KuKuJSBridge/kuKuJSBridge')
+include ':rxJava'
+project(':rxJava').projectDir = new File('../../hg.common.android/rxJava')
+include ':imagepicker'
+project(':imagepicker').projectDir = new File('../../hg.common.android/imagepicker')
+include ':app'

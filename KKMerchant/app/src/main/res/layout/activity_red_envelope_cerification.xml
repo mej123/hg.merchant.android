@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <TextView
+        android:id="@+id/scan_code_cerification"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/scan_certification"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/cerification_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/scan_code_cerification">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cerification_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </top.ftas.ftaswidget.springview.SpringView>
+
+
+</RelativeLayout>

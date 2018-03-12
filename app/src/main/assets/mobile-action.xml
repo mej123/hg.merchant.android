@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <!-- MobileBasic -->
+	<action name="call" class="com.hg.ftas.func2.func.MobileBasic" method="call"/>
+
+	<!-- MobileStorage -->
+	<action name="setMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="setMemoryCache"/>
+	<action name="getMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="getMemoryCache"/>
+	<action name="removeMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="removeMemoryCache"/>
+	<action name="clearMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="clearMemoryCache"/>
+	
+	<action name="setPreferences" class="com.hg.ftas.func2.func.MobilePreferences" method="setPreferences"/>
+	<action name="getPreferences" class="com.hg.ftas.func2.func.MobilePreferences" method="getPreferences"/>
+	
+	<!-- MobileUI -->
+	<action name="nextPageWithUrl" class="com.hg.ftas.func2.func.MobileUI" method="nextPageWithUrl"/>
+	<action name="back" class="com.hg.ftas.func2.func.MobileUI" method="back"/>
+	
+	<!-- MobileApp -->
+	<!-- 
+	<action name="close" class="com.hg.ftas.func2.func.MobileApp" method="close"/>
+	-->
+	
+	<!-- ShareWechat -->
+	<action name="shareWechatMessage" class="com.kuku.kkgamer.func.func.ShareWechat" method="shareWechatMessage"/>
+	<action name="shareWechatTimeline" class="com.kuku.kkgamer.func.func.ShareWechat" method="shareWechatTimeline"/>
+	<action name="open" class="com.kuku.kkgamer.func.open.MobileOpen" method="open"/>
+	<action name="setTitle" class="com.hg.ftas.func2.func.MobileUI" method="setTitle"/>
+	
+	<!-- MobileTool -->
+	<action name="browser" class="com.hg.ftas.func2.func.MobileTool" method="browser"/>
+
+</actions>

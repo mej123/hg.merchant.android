@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/new_psw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_new_pwd_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="18dp"
+            android:scaleType="center"
+            android:src="@mipmap/close_input" />
+
+        <EditText
+            android:id="@+id/pwd_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toLeftOf="@id/iv_new_pwd_close"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/new_pwd"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/select_color"
+            android:textColorHint="#a1a1a5"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/new_psw_layout"
+        android:layout_marginLeft="18dp"
+        android:background="@color/app_divder_color" />
+
+    <RelativeLayout
+        android:id="@+id/reset_psw_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/line"
+        android:background="@color/bg_color_white">
+
+        <ImageView
+            android:id="@+id/iv_ret_pwd_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="18dp"
+            android:scaleType="center"
+            android:src="@mipmap/close_input" />
+
+        <EditText
+            android:id="@+id/pwd_ret"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toLeftOf="@id/iv_ret_pwd_close"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/renew_pwd"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/select_color"
+            android:textColorHint="#a1a1a5"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hind_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reset_psw_layout"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/hint_setting_text" />
+
+    <TextView
+        android:id="@+id/setting_psw_confirm"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/hind_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_new_confirm_bg"
+        android:gravity="center"
+        android:text="@string/new_confirm"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

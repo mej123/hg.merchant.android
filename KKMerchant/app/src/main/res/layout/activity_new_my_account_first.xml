@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/my_account_bg_icon">
+
+            <TextView
+                android:id="@+id/tv_left_money_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="28dp"
+                android:text="@string/left_money_text"
+                android:textColor="@color/bg_while"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_left_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_left_money_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="0.00元"
+                android:textColor="@color/bg_while"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_withdraw"
+                android:layout_width="79dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/tv_left_money"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/my_account_withdraw_text_bg_shape"
+                android:gravity="center"
+                android:text="@string/withdraw"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@color/bg_while">
+
+
+            <ImageView
+                android:id="@+id/iv_deposit_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="14dp"
+                android:src="@mipmap/deposit_current_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv_deposit_current"
+                android:text="@string/balance_detail"
+                android:textColor="@color/color02"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/more"
+                android:textColor="@color/app_new_name_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_recycle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/account_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/withdraw_list_empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_while"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/empty_data_icon"
+                android:layout_width="170dp"
+                android:layout_height="136dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="98dp"
+                android:src="@drawable/my_account_no_data_bg_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_data_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:text="@string/new_no_withdraw_message"
+                android:textColor="@color/stroke_color_light_coffee"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <TextView
+        android:id="@+id/operate_album"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/add_album"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/album_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/operate_album"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/album_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </top.ftas.ftaswidget.springview.SpringView>
+
+</RelativeLayout>

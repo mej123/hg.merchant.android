@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/table_empty" />
+
+    <top.ftas.ftaswidget.view.DiffTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:tag_title="门店管理"
+        app:text_default_color="@color/text_color_light_little_gray"
+        app:text_default_title="桌台空空如也,进入门店管理进行编辑吧"
+        app:text_tag_color="@color/text_color_dark_little_blue" />
+</LinearLayout>

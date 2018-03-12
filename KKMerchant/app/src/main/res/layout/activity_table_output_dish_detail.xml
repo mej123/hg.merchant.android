@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/put_dish"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/dish_put"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+    <top.ftas.ftaswidget.view.RecyclerScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/put_dish"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_dish_detail" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divder_color" />
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <top.ftas.ftaswidget.view.MaxRecyclerView
+                    android:id="@+id/table_detail_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/empty_layout"
+                    layout="@layout/empty_dish_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+
+    <RelativeLayout
+        android:id="@+id/total_price_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="95dp"
+        android:gravity="left">
+
+        <LinearLayout
+            android:id="@+id/total_price_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/total_price_rect_icon"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/total"
+                android:textColor="@color/text_color_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/table_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/text_color_white"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/total_price_circle"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/total_price_bg"
+            android:background="@mipmap/total_price_circle_icon" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all_store_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <View style="@style/line" />
+
+    <TextView
+        android:id="@+id/tv_staff_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/color02"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_staff_position"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tv_staff_name"
+        android:background="@drawable/new_staff_list_position_bg_blue"
+        android:gravity="center"
+        android:textColor="@color/app_new_name_color"
+        android:textSize="11sp" />
+
+
+    <ImageView
+        android:id="@+id/filtrate_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/person_arrow_right" />
+
+    <TextView
+        android:id="@+id/tv_belong_store_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/filtrate_icon"
+        android:gravity="center"
+        android:paddingRight="12dp"
+        android:textColor="@color/filtrate_color"
+        android:textSize="13sp" />
+</RelativeLayout>

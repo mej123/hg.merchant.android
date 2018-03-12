@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <LinearLayout
+        android:id="@+id/classify_manage_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/new_goods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_color_white"
+            android:text="@string/new_create"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/edit_goods"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_bg_color"
+            android:text="@string/edit_content"
+            android:textColor="@color/text_color_white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/classify_manage_divder"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/classify_manage_bottom"
+        android:background="@color/app_divder_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/classify_manage_divder">
+
+
+        <top.ftas.ftaswidget.springview.SpringView
+            android:id="@+id/classify_manage_springview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/classify_manage_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white" />
+        </top.ftas.ftaswidget.springview.SpringView>
+
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="23dp"
+                android:drawableTop="@mipmap/classify_manage_empty"
+                android:text="@string/classify_manage_empty"
+                android:textColor="@color/text_color_light_coffee"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

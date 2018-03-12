@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../../hg.common.android/FtasBase/ftasbase" />
+            <option value="$PROJECT_DIR$/../../hg.common.android/FtasWidget/ftaswidget" />
+            <option value="$PROJECT_DIR$/../../hg.common.android/KuKuJSBridge/kuKuJSBridge" />
+            <option value="$PROJECT_DIR$/../../hg.common.android/rxJava" />
+            <option value="$PROJECT_DIR$/../../hg.common.android/zfalbum" />
+            <option value="$PROJECT_DIR$/../../hg.gamesdk.android/KuKuGameSdk/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

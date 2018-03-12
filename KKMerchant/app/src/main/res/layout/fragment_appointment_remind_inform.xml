@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/select_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="14sp" />
+
+        <com.zishan.sardinemerchant.view.XTextView
+            android:id="@+id/order_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|end"
+            android:paddingRight="14dp"
+            android:text="共 sBigeFontsBlue0eBig 笔预约"
+            android:textColor="@color/appointment"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divder_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <top.ftas.ftaswidget.springview.SpringView
+            android:id="@+id/inform_springview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/inform_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </top.ftas.ftaswidget.springview.SpringView>
+
+        <include
+            android:id="@+id/empty_layout"
+            layout="@layout/empty_remind_layout" />
+    </FrameLayout>
+
+</LinearLayout>  

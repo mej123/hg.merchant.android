@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- text size -->
+    <dimen name="size_33">33.0dip</dimen>
+    <dimen name="size_30">30.0dip</dimen>
+    <dimen name="size_25">25.0dip</dimen>
+    <dimen name="size_24">24.0dip</dimen>
+    <dimen name="size_23">23.0dip</dimen>
+    <dimen name="size_22">22.0dip</dimen>
+    <dimen name="size_21">21.0dip</dimen>
+    <dimen name="size_20">20.0dip</dimen>
+    <dimen name="size_19">19.0dip</dimen>
+    <dimen name="size_18">18.0dip</dimen>
+    <dimen name="size_17">17.0dip</dimen>
+    <dimen name="size_16">16.0dip</dimen>
+    <dimen name="size_15">15.0dip</dimen>
+    <dimen name="size_14">14.0dip</dimen>
+    <dimen name="size_13">13.0dip</dimen>
+    <dimen name="size_12">12.0dip</dimen>
+    <dimen name="size_11">11.0dip</dimen>
+    <dimen name="size_10">10.0dip</dimen>
+
+    <!-- common size -->
+    <dimen name="size_common_title">16dp</dimen>
+    <dimen name="size_login_rich_edit_text">15dp</dimen>
+    <dimen name="size_button_text">15dp</dimen>
+    <dimen name="size_stl_title">@dimen/size_common_title</dimen>
+    <dimen name="size_edit_text">14dp</dimen>
+    <dimen name="size_pwd_edit_text">@dimen/size_edit_text</dimen>
+    <dimen name="size_action_bar_title">18dp</dimen>
+    <dimen name="size_action_bar_menu">14dp</dimen>
+
+    <!-- svg eye -->
+    <dimen name="size_svg_eye_width">15dp</dimen>
+    <dimen name="size_svg_eye_height">15dp</dimen>
+    <integer name="size_svg_eye_viewport_width">1024</integer>
+    <integer name="size_svg_eye_viewport_height">1024</integer>
+    <integer name="size_svg_eye_duration">300</integer>
+    <integer name="size_svg_eye_stroke_width">6</integer>
+    <integer name="size_svg_eye_pivot_x">0</integer>
+    <integer name="size_svg_eye_pivot_y">0</integer>
+    <integer name="size_svg_eye_rotation">0</integer>
+
+
+    <dimen name="refresh_header_height_twitter">80dp</dimen>
+    <dimen name="load_more_footer_height_classic">60dp</dimen>
+
+</resources>

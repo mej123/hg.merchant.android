@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_while">
+
+
+    <ImageView
+        android:id="@+id/check_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/unchecked" />
+
+
+    <TextView
+        android:id="@+id/store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/check_icon"
+        android:textColor="@color/color02"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/province_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/store_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/check_icon"
+        />
+
+    <TextView
+        android:id="@+id/details_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/province_city"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/check_icon"
+        />
+
+    <View style="@style/line" />
+
+
+</RelativeLayout>

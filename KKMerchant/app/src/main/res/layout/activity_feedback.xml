@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <top.ftas.ftaswidget.view.CustomEditText
+        android:id="@+id/input_edit"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:gravity="left|top"
+        app:bg_drawable="@drawable/edit_text_shape"
+        app:input_text_color="@color/top_actionbar_title_color_2"
+        app:input_text_hint="@string/refuse_reason"
+        app:input_text_hint_color="@color/text_color_little_gray"
+        app:input_text_line_spacing="6dp"
+        app:input_text_max="30"
+        app:input_text_size="13"
+        app:padding_bottom="7dp"
+        app:padding_left="14dp"
+        app:padding_right="14dp"
+        app:padding_top="11dp"
+        app:show_padding_bottom="11dp"
+        app:show_padding_right="14dp"
+        app:show_text_color="@color/text_color_little_gray"
+        app:show_text_size="14" />
+
+    <TextView
+        android:id="@+id/reason_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/reason_choose"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feedback_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/feedback_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/feedback_select_bg_selector"
+        android:text="@string/confirm"
+        android:textColor="@color/feedback_select_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

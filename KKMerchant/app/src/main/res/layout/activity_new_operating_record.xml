@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/operating_record_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="164dp"
+            android:src="@drawable/my_account_no_data_bg_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="@string/new_no_operating_record"
+            android:textColor="@color/stroke_color_light_coffee"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/operating_record_spring_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/operating_record_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </top.ftas.ftaswidget.springview.SpringView>
+</FrameLayout>

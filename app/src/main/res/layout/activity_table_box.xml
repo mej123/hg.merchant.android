@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <top.ftas.ftaswidget.view.CustomToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/top_actionbar_bg_color"
+        android:paddingTop="33dp"
+        app:left_btn_src="@mipmap/back_icon"
+        app:left_btn_visible="true"
+        app:title_text="桌台包厢"
+        app:title_visible="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/table_box_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp" />
+</LinearLayout>

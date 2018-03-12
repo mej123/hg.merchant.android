@@ -1,0 +1,157 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!-- toolbar -->
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomToolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0.0dip</item>
+    </style>
+
+    <style name="AccountRichLoginEditTextStyle">
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">61dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:background">@drawable/account_rich_login_edit_bg_selector</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="AccountPwdLinearLayoutStyle">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">@color/colorContent</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AccountPwdEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textColor">@color/colorEditText</item>
+        <item name="android:textColorHint">@color/colorEditHint</item>
+        <item name="android:textSize">@dimen/size_pwd_edit_text</item>
+    </style>
+
+    <style name="CustomButtonStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+    </style>
+
+    <style name="CustomNormalButtonStyle" parent="CustomButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/custom_btn_bg_enabled_blue</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="CustomMiniButtonStyle" parent="CustomButtonStyle">
+        <item name="android:layout_width">99dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:background">@drawable/custom_btn_bg_selector_mini</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+
+    <style name="AccountSmartTabStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="stl_indicatorAlwaysInCenter">false</item>
+        <item name="stl_indicatorWithoutPadding">true</item>
+        <item name="stl_indicatorInFront">false</item>
+        <item name="stl_indicatorInterpolation">smart</item>
+        <item name="stl_indicatorGravity">bottom</item>
+        <item name="stl_indicatorColor">@color/colorStlIndicator</item>
+        <item name="stl_indicatorThickness">3dp</item>
+        <item name="stl_indicatorWidth">62dp</item>
+        <item name="stl_indicatorCornerRadius">0dp</item>
+        <item name="stl_overlineThickness">0dp</item>
+        <item name="stl_underlineThickness">0dp</item>
+        <item name="stl_dividerThickness">0dp</item>
+        <item name="stl_defaultTabBackground">?attr/selectableItemBackground</item>
+        <item name="stl_defaultTabTextAllCaps">false</item>
+        <item name="stl_defaultTabTextColor">@color/colorStlTitle</item>
+        <item name="stl_defaultTabTextSize">@dimen/size_stl_title</item>
+        <item name="stl_defaultTabTextHorizontalPadding">0dp</item>
+        <item name="stl_defaultTabTextMinWidth">0dp</item>
+        <item name="stl_distributeEvenly">true</item>
+        <item name="stl_clickable">true</item>
+        <item name="stl_titleOffset">0dp</item>
+        <item name="stl_drawDecorationAfterTab">false</item>
+        <item name="stl_customTabTextLayoutId">@layout/account_smart_tab_text_layout</item>
+        <item name="stl_customTabTextViewId">@id/custom_tab_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MainActionBar">
+        <item name="android:paddingTop">0dp</item>
+    </style>
+
+    <style name="CustomEditTextRightImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/app_divder_color</item>
+    </style>
+
+    <style name="MyDialogStyleTop" parent="android:Theme.Dialog">
+        <!-- <item name="android:windowAnimationStyle">@style/AnimTop2</item> -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="TopBg">
+        <item name="android:background">#26272A</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TopTitle" parent="TextColor">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:background">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#cccccc</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_store_manager"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="店长"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_store_manager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:text="@string/no_person"
+                    android:textColor="@color/color02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@+id/iv_right_arrow"
+                    android:text="@string/add_position_staff" />
+
+                <ImageView
+                    android:id="@+id/iv_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="14dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/store_manager_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_cashier"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="收银"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_cashier_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:text="@string/no_person"
+                    android:textColor="@color/color02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@+id/iv_cashier_right_arrow"
+                    android:text="@string/add_position_staff" />
+
+                <ImageView
+                    android:id="@+id/iv_cashier_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="14dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cashier_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/tv_waiter"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="服务员"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_waiter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="14dp"
+                    android:text="@string/no_person"
+                    android:textColor="@color/color02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_toLeftOf="@+id/iv_waiter_right_arrow"
+                    android:text="@string/add_position_staff" />
+
+                <ImageView
+                    android:id="@+id/iv_waiter_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="14dp"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/waiter_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_staff_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white"
+                app:layoutManager="LinearLayoutManager" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#d1d2d3" />
+
+            <TextView
+                android:id="@+id/tv_staff_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_while"
+                android:gravity="center"
+                android:text="员工添加"
+                android:textColor="@color/color02"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_position_manager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_blue_shape_3"
+            android:gravity="center"
+            android:text="职位管理"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

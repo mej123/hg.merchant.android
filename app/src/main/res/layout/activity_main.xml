@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/urlEdit"
+        android:textSize="20sp"
+        android:text="http://120.27.5.209:8080/kuku-server-net/test-kkjs.html"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/loginBtn"
+        android:text="登录"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+</LinearLayout>

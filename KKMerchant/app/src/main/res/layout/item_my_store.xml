@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/store_item_bg"
+    android:orientation="vertical"
+    android:paddingBottom="18dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/store_state"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_toRightOf="@id/store_name"
+            android:background="@drawable/my_store_state_start_shape"
+            android:gravity="center"
+            android:textColor="@color/text_color_white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/store_location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/address_icon" />
+
+        <TextView
+            android:id="@+id/store_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/store_location_icon"
+            android:textColor="@color/text_color_gray_6"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/store_location_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/text_color_gray_6"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/store_date_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/create_time_icon" />
+
+        <TextView
+            android:id="@+id/store_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@id/store_date_icon"
+            android:text="@string/create_time"
+            android:textColor="@color/text_color_gray_6"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/store_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/store_date_title"
+            android:textColor="@color/text_color_gray_6"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="11dp">
+
+    <LinearLayout
+        android:id="@+id/goods_center_view"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/goods_center_view"
+        android:gravity="right"
+        android:textColor="@color/text_color_little_black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/goods_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/goods_center_view"
+        android:gravity="left"
+        android:textColor="@color/text_color_little_black"
+        android:textSize="15sp" />
+</RelativeLayout>

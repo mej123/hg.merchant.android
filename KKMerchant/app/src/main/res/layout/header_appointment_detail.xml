@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/appointment_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color_white"
+        android:paddingBottom="20dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/customer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/customer_name"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/detail_state"
+            android:layout_width="49dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/red_round_shape_2"
+            android:gravity="center"
+            android:text="@string/has_refused"
+            android:textColor="@color/text_color_white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/meal_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_name"
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@mipmap/advance_icon"
+            android:drawablePadding="8dp"
+            android:text="用餐时间"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/meal_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/meal_time_title"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/meal_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customer_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/meal_date"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/meal_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_time_title"
+            android:layout_marginTop="9dp"
+            android:drawableLeft="@mipmap/person_icon"
+            android:drawablePadding="8dp"
+            android:text="用餐人数"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/meal_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_time_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/meal_num_title"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/meal_num_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_time_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/meal_num"
+            android:text="|"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/meal_num_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_time_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/meal_num_mark"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/remark_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_num_title"
+            android:layout_marginTop="9dp"
+            android:text="备注"
+            android:textColor="@color/appointment_content"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/remark_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_num_title"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/remark_msg_title"
+            android:textColor="@color/appointment_remark"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

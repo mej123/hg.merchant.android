@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_bg_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_total_money"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/bg_while">
+
+                <TextView
+                    android:id="@+id/total_account_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/deposit_icon"
+                    android:drawablePadding="9dp"
+                    android:paddingLeft="14dp"
+                    android:text="总金额\t(元)"
+                    android:textColor="@color/appointment_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/total_account_hint"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="30dp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_order_sum"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/rl_total_money"
+                android:background="@color/bg_while">
+
+                <TextView
+                    android:id="@+id/total_order_amount_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@mipmap/order_amount_icon"
+                    android:drawablePadding="9dp"
+                    android:paddingLeft="14dp"
+                    android:text="订单笔数\t(笔)"
+                    android:textColor="@color/appointment_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_order_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/total_order_amount_hint"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_order_sum">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bill_particulars_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.zishan.sardinemerchant.view.DropMenu
+        android:id="@+id/drop_menu_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

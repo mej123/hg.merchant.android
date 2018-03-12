@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="14dp"
+    android:background="@color/bg_color_white">
+
+    <TextView
+        android:id="@+id/certification_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/certification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/certification_date"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/certification_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/certification_date"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/text_color_light_gray"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/certification_desc"
+        android:layout_marginTop="15dp"
+        android:background="@color/app_divder_color" />
+
+    <ImageView
+        android:id="@+id/certification_next_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/forward" />
+</RelativeLayout>

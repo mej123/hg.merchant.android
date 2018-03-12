@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="11dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="14dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_custom_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/seate"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/tv_custom_name"
+
+            android:textColor="@color/seate"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="9dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/advance_icon" />
+
+        <TextView
+            android:id="@+id/tv_eat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/iv_time"
+            android:paddingBottom="9dp"
+            android:paddingTop="15dp"
+            android:text="@string/dish_time"
+            android:textColor="@color/appointment_content"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_eat_time"
+            android:paddingBottom="9dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/appointment_content"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="9dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingRight="14dp"
+            android:paddingTop="15dp"
+            android:src="@mipmap/next_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/person_icon" />
+
+        <TextView
+            android:id="@+id/tv_eat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toEndOf="@+id/iv_count"
+            android:layout_toRightOf="@+id/iv_count"
+            android:text="@string/table_person_num"
+            android:textColor="@color/appointment_content"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_count_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_eat_count"
+            android:textColor="@color/appointment_content"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e3e9ed" />
+
+    <RelativeLayout
+        android:id="@+id/rl_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/operator"
+            android:textColor="@color/seate"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/tv_custom"
+            android:textColor="@color/seate"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_gmtmodified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/tv_person"
+            android:textColor="@color/appointment_content"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_refuse_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/appointment_content"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

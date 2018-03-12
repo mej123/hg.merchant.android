@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/choose_dish_boottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_color_white">
+
+        <View
+            android:id="@+id/divder"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/app_divder_color" />
+
+        <TextView
+            android:id="@+id/confirm_order"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/divder"
+            android:background="@color/bg_color_blue_6"
+            android:gravity="center"
+            android:text="@string/confirm_order"
+            android:textColor="@color/text_color_white"
+            android:textSize="15sp" />
+
+        <!--  <LinearLayout
+              android:id="@+id/dish_num_layout"
+              android:layout_width="28dp"
+              android:layout_height="20dp"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="14dp"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@mipmap/dish_left_icon" />
+
+              <TextView
+                  android:id="@+id/dish_selected_num"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@mipmap/dish_rect_icon"
+                  android:ellipsize="end"
+                  android:gravity="center"
+                  android:maxLength="6"
+                  android:maxLines="1"
+                  android:textColor="@color/text_color_white"
+                  android:textSize="11sp" />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:background="@mipmap/dish_right_icon" />
+          </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/dish_selected_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:background="@mipmap/choose_dish_below_dish_number_icon"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/text_color_white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/dish_total_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dish_selected_num"
+            android:maxLines="1"
+            android:text="@string/total_title"
+            android:textColor="@color/text_color_dark_black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/dish_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@id/dish_total_title"
+            android:maxLines="1"
+            android:textColor="@color/text_color_bright_blue"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/choose_dish_boottom"
+        android:orientation="vertical">
+
+        <top.ftas.ftaswidget.recyclerview.SpecifiedRecyclerView
+            android:id="@+id/extra_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:recycler_height="268dp"
+            android:background="@color/bg_color_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/category_recycler_view"
+                android:layout_width="104dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_color_white" />
+
+            <FrameLayout
+                android:id="@+id/dish_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app_bg_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

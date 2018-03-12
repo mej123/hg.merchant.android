@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KKMerchant.iml" filepath="$PROJECT_DIR$/KKMerchant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hg.common.android/FtasBase/ftasbase/ftasbase.iml" filepath="$PROJECT_DIR$/../../hg.common.android/FtasBase/ftasbase/ftasbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hg.common.android/FtasWidget/ftaswidget/ftaswidget.iml" filepath="$PROJECT_DIR$/../../hg.common.android/FtasWidget/ftaswidget/ftaswidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hg.merchant.android.iml" filepath="$PROJECT_DIR$/hg.merchant.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hg.gamesdk.android/KuKuGameSdk/app/kuKuGameSdkAppModule.iml" filepath="$PROJECT_DIR$/../../hg.gamesdk.android/KuKuGameSdk/app/kuKuGameSdkAppModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hg.common.android/KuKuJSBridge/kuKuJSBridge/kuKuJSBridgeAppModule.iml" filepath="$PROJECT_DIR$/../../hg.common.android/KuKuJSBridge/kuKuJSBridge/kuKuJSBridgeAppModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hg.common.android/rxJava/rxJava.iml" filepath="$PROJECT_DIR$/../../hg.common.android/rxJava/rxJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../hg.common.android/zfalbum/zfalbum.iml" filepath="$PROJECT_DIR$/../../hg.common.android/zfalbum/zfalbum.iml" />
+    </modules>
+  </component>
+</project>

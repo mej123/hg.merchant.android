@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <top.ftas.ftaswidget.view.RecyclerScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <top.ftas.ftaswidget.view.MaxRecyclerView
+                android:id="@+id/basic_position_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white" />
+
+            <top.ftas.ftaswidget.view.MaxRecyclerView
+                android:id="@+id/add_position_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+    <TextView
+        android:id="@+id/confirm_and_save"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/text_color_blue_6"
+        android:gravity="center"
+        android:text="@string/new_add_position"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</RelativeLayout>

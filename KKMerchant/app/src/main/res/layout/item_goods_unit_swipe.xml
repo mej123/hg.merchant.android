@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top.ftas.ftaswidget.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/item_goods_unit" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/classify_delete"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color_red"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/bg_color_white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</top.ftas.ftaswidget.recyclerview.SwipeItemLayout>

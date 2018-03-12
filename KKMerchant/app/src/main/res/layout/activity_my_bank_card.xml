@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_bg"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="11dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/bg_while"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_bank_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="71dp"
+                android:text="****"
+                android:textColor="@color/bg_while"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_bank_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/tv_bank_number1"
+                android:text="****"
+                android:textColor="@color/bg_while"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_bank_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/tv_bank_number2"
+                android:text="****"
+                android:textColor="@color/bg_while"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_last_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/tv_bank_number3"
+                android:textColor="@color/bg_while"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/change_bind_bank_card"
+            android:layout_width="match_parent"
+            android:layout_marginTop="68dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/login_new_confirm_bg"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="@string/change_bind_bank_card"
+            android:textColor="@color/text_color_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

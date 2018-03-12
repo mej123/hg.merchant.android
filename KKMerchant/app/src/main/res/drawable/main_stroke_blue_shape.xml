@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_selected="true" android:drawable="@mipmap/selected_data" />
+    <item android:drawable="@mipmap/unselected_data" />-->
+
+    <stroke android:color="@color/stroke_color_light_blue"
+        android:width="1px"/>
+    <corners android:radius="1dp"/>
+</shape>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <LinearLayout
+        android:id="@+id/pandect_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/bg_color_white"
+        android:orientation="horizontal">
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/xTablayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:tabPaddingStart="30dp"
+            app:xTabBackgroundColor="@color/bg_color_white"
+            app:xTabDisplayNum="3"
+            app:xTabDividerColor="#e3e9ed"
+            app:xTabDividerGravity="center"
+            app:xTabDividerHeight="10dp"
+            app:xTabDividerWidth="1dp"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabIndicatorColor="@color/xtab_select_text_color"
+            app:xTabIndicatorHeight="0dp"
+            app:xTabMode="fixed"
+            app:xTabSelectedTextColor="#485057"
+            app:xTabSelectedTextSize="13sp"
+            app:xTabTextBold="false"
+            app:xTabTextColor="#7f8a95"
+            app:xTabTextSelectedBold="true"
+            app:xTabTextSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/app_divder_color" />
+
+
+        <ImageView
+            android:id="@+id/select_icon"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/arrow_bottom" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/appointment_divder"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/pandect_tablayout"
+        android:background="@color/app_divder_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appointment_divder">
+
+        <top.ftas.ftaswidget.viewpager.NonSwipeableViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <com.zishan.sardinemerchant.view.DropMenu
+            android:id="@+id/drop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+
+        <TextView
+            android:id="@+id/appointment_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/appointment_setting"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/appointment_setting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"
+            android:src="@drawable/checkbox_selector" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/appointment_setting_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/bg_color_white">
+
+
+        <TextView
+            android:id="@+id/appointment_setting_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/appointment_setting_time"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/appointment_setting_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="6dp"
+            android:drawableRight="@mipmap/forward"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/text_color_light_black"
+            android:paddingRight="14dp"
+            android:src="@drawable/checkbox_selector"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/appointment_setting_num_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+        <View
+            android:id="@+id/divder"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+
+        <TextView
+            android:id="@+id/appointment_setting_num_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/appointment_setting_num"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/appointment_setting_num_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:text="@string/unit_person"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/appointment_setting_num"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divder"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/appointment_setting_num_unit"
+            android:background="@drawable/edit_text_bg_white"
+            android:gravity="right|center_vertical"
+            android:hint="@string/input_person_hint"
+            android:inputType="number|numberDecimal"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:textColor="@color/text_color_light_black"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/confirm_appointment_setting"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+</LinearLayout>

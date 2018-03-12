@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contract_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/store_name_icon"
+            android:drawablePadding="9dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:text="@string/store_name"
+            android:textColor="@color/company_name_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/store_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:textColor="@color/store_name_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/store_address_icon"
+            android:drawablePadding="9dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:text="@string/store_address"
+            android:textColor="@color/company_name_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/store_address_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:textColor="@color/store_name_color"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="18dp"
+            android:textColor="@color/store_name_color"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_operating_status_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:maxLines="1"
+                android:text="@string/operating_status"
+                android:textColor="@color/text_color_little_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/operating_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+
+            <TextView
+                android:id="@+id/operating_status_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/operating_status_icon"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/store_open_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/store_open_time"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/store_open_time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+            <TextView
+                android:id="@+id/store_open_time_edit"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@id/store_open_time_icon"
+                android:background="@drawable/edit_text_bg_white"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:hint="未设置"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_store_phone"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:hint="未设置"
+                android:maxLines="1"
+                android:text="@string/store_mobile"
+                android:textColor="@color/text_color_little_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/store_phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+
+            <TextView
+                android:id="@+id/store_mobile_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/store_phone_icon"
+                android:gravity="right|center_vertical"
+                android:hint="未设置"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/store_consume_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/consume_manage"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/store_consume_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+            <TextView
+                android:id="@+id/store_consume_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@id/store_consume_icon"
+                android:background="@drawable/edit_text_bg_white"
+                android:gravity="right|center_vertical"
+                android:text="未设置"
+                android:maxLines="1"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/store_introduce_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/store_introduce"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/store_introduce_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+            <TextView
+                android:id="@+id/store_introduce_edit"
+                android:layout_width="145dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_toLeftOf="@+id/store_introduce_icon"
+                android:layout_toStartOf="@+id/store_introduce_icon"
+                android:background="@drawable/edit_text_bg_white"
+                android:ellipsize="end"
+                android:hint="未设置"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shop_front_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/shop_front_photo"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/shop_front_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+            <TextView
+                android:id="@+id/shop_front_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@id/shop_front_icon"
+                android:background="@drawable/edit_text_bg_white"
+                android:gravity="right|center_vertical"
+                android:hint="未设置"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/store_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/environment_photo"
+                android:textColor="@color/text_color_little_black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/store_photo_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="14dp"
+                android:src="@mipmap/forward" />
+
+            <TextView
+                android:id="@+id/store_photo_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@id/store_photo_icon"
+                android:background="@drawable/edit_text_bg_white"
+                android:gravity="right|center_vertical"
+                android:hint="未设置"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="44dp"-->
+        <!--android:background="@color/bg_color_white">-->
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="14dp"-->
+        <!--android:text="@string/store_name"-->
+        <!--android:textColor="@color/text_color_little_black"-->
+        <!--android:textSize="16sp" />-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/store_name_edit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:textColor="@color/text_color_light_black"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1px"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginLeft="14dp"-->
+        <!--android:background="@color/app_divder_color" />-->
+
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:background="@color/bg_color_white">-->
+
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="14dp"-->
+        <!--android:text="@string/store_address"-->
+        <!--android:textColor="@color/text_color_little_black"-->
+        <!--android:textSize="16sp" />-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/store_address_edit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:textColor="@color/text_color_light_black"-->
+        <!--android:textSize="14sp" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!-- <RelativeLayout
+             android:id="@+id/store_model_layout"
+             android:layout_width="match_parent"
+             android:layout_height="46dp"
+             android:background="@color/bg_color_white">
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="14dp"
+                 android:text="@string/revenue_model"
+                 android:textColor="@color/text_color_little_black"
+                 android:textSize="16sp" />
+
+
+             <ImageView
+                 android:id="@+id/store_model_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:paddingRight="14dp"
+                 android:src="@mipmap/forward" />
+
+             <TextView
+                 android:id="@+id/store_model_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:layout_marginRight="11dp"
+                 android:layout_toLeftOf="@id/store_model_icon"
+                 android:background="@drawable/edit_text_bg_white"
+                 android:gravity="right|center_vertical"
+                 android:hint="未设置"
+                 android:maxLines="1"
+                 android:textColor="@color/text_color_light_black"
+                 android:textColorHint="@color/text_color_gray"
+                 android:textSize="14sp" />
+
+         </RelativeLayout>-->
+
+        <!-- <RelativeLayout
+             android:id="@+id/store_table_layout"
+             android:layout_width="match_parent"
+             android:layout_height="46dp"
+             android:layout_marginTop="11dp"
+             android:background="@color/bg_color_white">
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="14dp"
+                 android:text="@string/table_box"
+                 android:textColor="@color/text_color_little_black"
+                 android:textSize="16sp" />
+
+
+             <ImageView
+                 android:id="@+id/store_table_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:paddingRight="14dp"
+                 android:src="@mipmap/forward" />
+
+             <TextView
+                 android:id="@+id/store_table_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:layout_marginRight="11dp"
+                 android:layout_toLeftOf="@id/store_table_icon"
+                 android:background="@drawable/edit_text_bg_white"
+                 android:gravity="right|center_vertical"
+                 android:hint="未设置"
+                 android:maxLines="1"
+                 android:textColor="@color/text_color_light_black"
+                 android:textColorHint="@color/text_color_gray"
+                 android:textSize="14sp" />
+
+             <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1px"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginLeft="14dp"
+                 android:background="@color/app_divder_color" />
+         </RelativeLayout>
+ -->
+        <!-- <RelativeLayout
+             android:id="@+id/store_appointment_layout"
+             android:layout_width="match_parent"
+             android:layout_height="46dp"
+             android:background="@color/bg_color_white">
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="14dp"
+                 android:text="@string/appointment_setting"
+                 android:textColor="@color/text_color_little_black"
+                 android:textSize="16sp" />
+
+
+             <ImageView
+                 android:id="@+id/appointment_setting_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:paddingRight="14dp"
+                 android:src="@mipmap/forward" />
+
+             <TextView
+                 android:id="@+id/appointment_setting_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="120dp"
+                 android:layout_marginRight="11dp"
+                 android:layout_toLeftOf="@id/appointment_setting_icon"
+                 android:background="@drawable/edit_text_bg_white"
+                 android:gravity="right|center_vertical"
+                 android:hint="未设置"
+                 android:maxLines="1"
+                 android:textColor="@color/text_color_light_black"
+                 android:textColorHint="@color/text_color_gray"
+                 android:textSize="14sp" />
+         </RelativeLayout>
+
+ -->
+        <!--<ImageView-->
+        <!--android:id="@+id/enter_appointment_model_icon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingBottom="40dp"-->
+        <!--android:paddingTop="64dp"-->
+        <!--android:src="@mipmap/enter_appointment_model_icon" />-->
+    </LinearLayout>
+</ScrollView>

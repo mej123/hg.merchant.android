@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/bg_color_white">
+
+
+        <TextView
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="大厅"
+            android:textColor="@color/text_color_selected_tab_store"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/tab_msg"
+            android:layout_above="@id/tab_title"
+            android:layout_toRightOf="@id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/msg_red" />
+
+        <TextView
+            android:id="@+id/tab_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tab_title"
+            android:gravity="center"
+            android:text="(1/30)"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/tab_title"
+            android:textColor="@color/text_color_light_coffee"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+</LinearLayout>

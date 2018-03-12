@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <top.ftas.ftaswidget.view.UnderlineTextView
+        android:id="@+id/become_seller"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:gravity="center"
+        app:default_color="@color/colorStlSelectedTitle"
+        app:pressed_color="@color/colorStlSelectedTitle"
+        app:text="@string/become_seller"
+        app:textsize="14"
+        app:underline_height="0.5dp" />
+
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/identity_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/become_seller">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/identity_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </top.ftas.ftaswidget.springview.SpringView>
+</RelativeLayout>

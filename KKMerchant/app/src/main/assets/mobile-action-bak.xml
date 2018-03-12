@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <!-- MobileBasic -->
+    <action name="call" class="com.hg.ftas.func.func.MobileBasic" method="call"/>
+
+    <!-- MobileUI -->
+    <action name="nextPageWithUrl" class="com.hg.ftas.func.func.MobileUI" method="nextPageWithUrl"/>
+    <action name="back" class="com.hg.ftas.func.func.MobileUI" method="back"/>
+
+</actions>

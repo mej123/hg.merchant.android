@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_white">
+
+    <ImageView
+        android:id="@+id/receipt_success_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:src="@mipmap/receipt_success_icon" />
+
+    <TextView
+        android:id="@+id/receipt_success_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receipt_success_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/receipt_success"
+        android:textColor="@color/text_color_black_3"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/receipt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receipt_success_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:textColor="@color/text_color_black_3"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/view_order_detail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:drawablePadding="11dp"
+        android:drawableRight="@mipmap/double_arrow_icon"
+        android:text="@string/view_order_detail"
+        android:textColor="@color/text_color_black_4"
+        android:textSize="17sp" />
+</RelativeLayout>

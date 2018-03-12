@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_click"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/bg_while">
+
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/tv_desk_number"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="桌号：A102" />
+
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_below="@+id/tv_desk_number"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入座时间：10:00" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_order_money"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单金额：180:00" />
+
+
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:text="消费中"
+        android:background="@drawable/custom_btn_bg_selector_mini"
+        />
+
+
+
+    <ImageView
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btg_icon_arrow_right_normal"
+        />
+
+    <View
+        style="@style/line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        />
+
+</RelativeLayout>

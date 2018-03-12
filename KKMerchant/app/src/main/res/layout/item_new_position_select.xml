@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all_store_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <View style="@style/line" />
+
+    <TextView
+        android:id="@+id/tv_add_position_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/color02"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/position_state"
+        android:layout_width="46dp"
+        android:layout_height="14dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tv_add_position_name"
+        android:background="@drawable/new_withdraw_yellow_bg_shape"
+        android:gravity="center"
+        android:textColor="@color/yellow"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_describe_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/position_state"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:paddingRight="105dp"
+        android:text="@string/tv_message_management_hint"
+        android:textColor="@color/text_color_gray"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+   <TextView
+       android:id="@+id/view_placeholder"
+       android:layout_below="@id/position_state"
+       android:layout_width="match_parent"
+       android:layout_height="18dp"
+       android:visibility="visible"
+       />
+
+    <ImageView
+        android:id="@+id/check_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/permission_check_icon"
+        android:visibility="gone" />
+</RelativeLayout>

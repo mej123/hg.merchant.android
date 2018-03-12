@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafbfc">
+
+
+    <ImageView
+        android:id="@+id/commit_audit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:src="@mipmap/rect_green_checked" />
+
+    <TextView
+        android:id="@+id/tv_audit_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commit_audit_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/commit_result"
+        android:textColor="#404040"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_below="@+id/tv_audit_state"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/gradient_blue_shape_2"
+        android:gravity="center"
+        android:text="@string/finsh"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

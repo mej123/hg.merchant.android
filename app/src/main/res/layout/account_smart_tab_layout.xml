@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ogaclejapan.smarttablayout.SmartTabLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_smartTabLayout"
+    style="@style/AccountSmartTabStyle"
+    />

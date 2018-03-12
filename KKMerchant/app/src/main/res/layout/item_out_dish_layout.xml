@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/bg_color_white"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/text_select_color"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/tab_msg"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_above="@id/tab_title"
+            android:layout_toRightOf="@id/tab_title"
+            android:background="@mipmap/msg_red"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/tab_indicator"
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_select_color" />
+
+    </RelativeLayout>
+</LinearLayout>

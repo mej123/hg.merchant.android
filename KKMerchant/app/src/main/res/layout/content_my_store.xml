@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color_white">
+
+    <include
+        android:id="@+id/empty_store_layout"
+        layout="@layout/empty_store_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/my_store_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_store_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </top.ftas.ftaswidget.springview.SpringView>
+
+</FrameLayout>

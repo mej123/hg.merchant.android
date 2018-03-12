@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/order_operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/operate_blance"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="结算"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/operate_merge"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="合并"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/operate_apart"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="拆台"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/operate_tansmit"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="转台"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/operate_remove"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="撤单"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/operate_choose"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="点菜"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/operate_view"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:text="查看订单详情"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/order_operation_bg_selector"
+                android:gravity="center"
+                android:textColor="@color/order_operation_select_color"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/operation_back_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_operation_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:src="@mipmap/order_operation_back_icon" />
+
+</RelativeLayout>
+

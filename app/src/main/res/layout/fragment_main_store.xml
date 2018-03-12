@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+
+    <top.ftas.ftaswidget.view.CustomToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/top_actionbar_bg_color"
+        android:paddingTop="33dp"
+        app:right_btn_visible="true"
+        app:right_btn_src="@mipmap/add_icon"
+        app:title_text="商品管理"
+        app:title_visible="true" />
+
+    <TextView
+        android:id="@+id/store_separate_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar"
+        android:background="@color/bg_color_white"
+        android:gravity="center"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:text="分类管理"
+        android:textColor="@color/text_color_light_blue"
+        android:textSize="13dp" />
+
+    <top.ftas.ftaswidget.tablayout.SlidingTabLayout
+        android:id="@+id/slide_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:layout_toLeftOf="@id/store_separate_manager"
+        android:background="@color/bg_color_white"
+        app:tl_indicator_color="@color/stroke_color_little_blue"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_width="26dp"
+        app:tl_textSelectColor="@color/text_color_selected_tab_store"
+        app:tl_textUnselectColor="@color/text_color_light_coffee" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/store_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slide_tab_layout" />
+
+
+</RelativeLayout>

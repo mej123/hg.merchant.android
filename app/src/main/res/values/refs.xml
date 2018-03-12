@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="tab_guide_round_enabled">#FFFFFF</drawable>
+    <drawable name="tab_guide_round_disabled">#ff9988</drawable>
+    <drawable name="tab_selected_pressed_holo">#ff6655</drawable>
+</resources>

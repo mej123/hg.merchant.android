@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/empty_layout"
+            layout="@layout/empty_table_manage_layout" />
+
+        <top.ftas.ftaswidget.springview.SpringView
+            android:id="@+id/table_pandect_springview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <top.ftas.ftaswidget.view.RecyclerScrollview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <top.ftas.ftaswidget.view.MaxRecyclerView
+                        android:id="@+id/hall_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <top.ftas.ftaswidget.view.MaxRecyclerView
+                        android:id="@+id/card_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <top.ftas.ftaswidget.view.MaxRecyclerView
+                        android:id="@+id/box_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+        </top.ftas.ftaswidget.springview.SpringView>
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+</LinearLayout>

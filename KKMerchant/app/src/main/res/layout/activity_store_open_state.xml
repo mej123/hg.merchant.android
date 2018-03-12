@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/open_state_icon"
+        android:layout_width="match_parent"
+        android:layout_height="217dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:text="@string/store_open_time"
+        android:textColor="@color/text_color_black_6"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/duration_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/duration_title_1"
+            android:layout_width="73dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gradient_my_store_open_state_shape"
+            android:gravity="center"
+            android:text="@string/first_duration"
+            android:textColor="@color/text_color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/duration_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/duration_title_1"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_black_1"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/duration_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/duration_title_2"
+            android:layout_width="73dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gradient_my_store_open_state_shape"
+            android:gravity="center"
+            android:text="@string/second_duration"
+            android:textColor="@color/text_color_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/duration_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/duration_title_2"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_black_1"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/state_click"
+        android:layout_width="345dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/my_store_open_state_shape"
+        android:gravity="center"
+        android:textColor="@color/text_color_blue_6"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/store_stop_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:src="@mipmap/store_stop_icon"
+        android:visibility="gone" />
+
+</LinearLayout>

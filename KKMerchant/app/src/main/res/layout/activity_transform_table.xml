@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <TextView
+        android:id="@+id/table_transform_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+    <top.ftas.ftaswidget.view.RecyclerScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/table_transform_confirm"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_head_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while">
+
+                <TextView
+                    android:id="@+id/iv_table_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/table_icon"
+                    android:drawablePadding="11dp"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="15dp"
+                    android:text="桌号："
+                    android:textColor="@color/color02"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/table_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/iv_table_icon"
+                    android:textColor="@color/color02"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_table_icon"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="11dp"
+                    android:paddingLeft="14dp"
+                    android:text="@string/transform_table_hint"
+                    android:textColor="@color/stroke_color_light_coffee"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/transform_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+</RelativeLayout>

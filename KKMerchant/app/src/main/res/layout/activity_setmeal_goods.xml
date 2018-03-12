@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+
+    <top.ftas.ftaswidget.view.CustomEditText
+        android:id="@+id/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@color/bg_color_white"
+        android:gravity="left|top"
+        app:input_text_color="@color/text_color_light_black"
+        app:input_text_hint="在该区域内填写套餐包含的商品名称\n例如：芝士年糕6条+可乐+炸鸡6只"
+        app:input_text_hint_color="@color/text_color_gray"
+        app:input_text_line_spacing="6dp"
+        app:input_text_max="50"
+        app:input_text_size="13"
+        app:padding_bottom="14dp"
+        app:padding_left="14dp"
+        app:padding_right="14dp"
+        app:padding_top="14dp"
+        app:show_padding_bottom="14dp"
+        app:show_padding_right="14dp"
+        app:show_text_color="@color/text_color_little_black"
+        app:show_text_size="12" />
+
+    <View
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

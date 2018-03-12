@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/color03</color>
+    <color name="colorPrimaryDark">@color/color03</color>
+    <color name="colorAccent">@color/color03</color>
+
+
+    <!-- common color-->
+    <color name="color01">#fe6464</color>
+    <color name="color02">#1f2427</color>
+    <color name="color03">#ffda44</color>
+    <color name="color04">#666666</color>
+    <color name="color05">#e2e2e2</color>
+    <color name="color06">#a5a5a5</color>
+    <color name="color07">#ffffff</color>
+    <color name="color08">#efefef</color>
+    <color name="color09">#d8d9da</color>
+    <color name="color10">#BF000000</color>
+    <color name="color11">#f0cc3c</color>
+    <color name="color12">#ffea93</color>
+
+    <!-- Common -->
+    <color name="colorText">@color/color02</color>
+    <color name="colorDivider">@color/color05</color>
+    <color name="colorCommonTitle">@color/color02</color>
+    <color name="colorActionBarTitle">@color/color02</color>
+    <color name="colorContent">@color/color07</color>
+    <color name="colorDarkContent">@color/color08</color>
+
+    <!-- Common Button -->
+    <color name="colorButtonEnabledBg">@color/color03</color>
+    <color name="colorButtonPressedBg">@color/color11</color>
+    <color name="colorButtonDisabledBg">@color/color12</color>
+    <color name="colorButtonText">@color/color02</color>
+
+    <!-- Custom Toast -->
+    <color name="colorCustomToastText">@color/color07</color>
+    <color name="colorCustomToastBg">@color/color10</color>
+
+    <!-- EditText -->
+    <color name="colorEditBorder">@color/color08</color>
+    <color name="colorEditContent">@color/colorContent</color>
+    <color name="colorEditHint">@color/color06</color>
+    <color name="colorEditText">@color/color02</color>
+
+
+    <!-- SmartTabLayout -->
+    <color name="colorStlIndicator">@color/colorPrimary</color>
+    <color name="colorStlBg">@color/colorContent</color>
+    <color name="colorStlTitle">@color/color04</color>
+    <color name="colorStlSelectedTitle">@color/color03</color>
+
+    <!-- svg eye -->
+    <color name="colorSvgEyeFillColor">@color/color09</color>
+    <color name="colorSvgEyeStrokeColor">@color/color09</color>
+    <color name="common_huang">#FF6600</color>
+    <color name="edit_text_color_pre">#404040</color>
+    <color name="edit_text_color_normal">#a5a5a5</color>
+    <color name="bg_hui">#f5f6f8</color>
+    <color name="bg_while">#ffffff</color>
+    <color name="gsd_c17">@color/color10</color>
+    <color name="rgb53_99">#e2e2e2</color>
+
+    <color name="colorline">#d1d2d3</color>
+    <color name="numberpicker_text">#404040</color>
+    <color name="colorButtonEnabledBghui">#ebebeb</color>
+    <color name="light_color_blue">#404040</color>
+    <color name="darkgray">#404040</color>
+    <color name="lightgray">#666666</color>
+    <color name="lightred">#fe6464</color>
+    <color name="lightyellow">#fea264</color>
+
+    <color name="gray">#cecece</color>
+    <color name="theme_color">#F4606C</color>
+
+
+    <!-- 选中的颜色 -->
+    <color name="selected_tab_color">#4d82f0</color>
+    <!-- 未选中的颜色 -->
+    <color name="unselected_tab_color">#d3d5d9</color>
+
+
+    <!-- 分割线颜色-->
+    <!-- 描边 -->
+    <color name="stroke_color">#d1d2d3</color>
+    <color name="stroke_color_blue">#3360f2</color>
+    <color name="stroke_color_light_blue">#325ff2</color>
+    <color name="stroke_color_light_coffee">#7f8a95</color>
+    <color name="stroke_color_light_red">#ff5f3e</color>
+    <color name="stroke_color_little_blue">#4679f0</color>
+    <color name="stroke_color_light_white">#ebe3e9ed</color>
+    <!-- 背景色-->
+    <!-- 首页actionbar背景颜色 -->
+    <color name="mainpage_actionbar_bg_color">#325ef2</color>
+
+
+    <!-- 背景白色-->
+    <color name="bg_color_white">#ffffff</color>
+    <color name="goods_options_bg_color">#ebffffff</color>
+    <color name="goods_discount_bg_color">#b3000000</color>
+
+    <!-- 字体颜色-->
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_light_white">#fefefe</color>
+    <color name="text_color_blue">#3360f2</color>
+    <color name="text_color_light_gray">#7f8a95</color>
+    <color name="text_color_light_black">#1f2427</color>
+    <color name="text_color_little_black">#485057</color>
+    <color name="text_color_unselected_tab_main">#d3d5d9</color>
+    <color name="text_color_selected_tab_main">#4d82f0</color>
+    <color name="text_color_selected_tab_store">#3765f2</color>
+    <color name="text_color_light_orange">#f7a564</color>
+    <color name="text_color_red">#ff3b30</color>
+    <color name="text_color_light_coffee">#7f8a95</color>
+    <color name="text_color_light_red">#ff5f3e</color>
+    <color name="text_color_light_blue">#548cef</color>
+
+</resources>

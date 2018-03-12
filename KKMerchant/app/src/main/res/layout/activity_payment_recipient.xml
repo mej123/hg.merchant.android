@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_deep_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/receipt_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/receipt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/recipient_icon"
+                    android:drawablePadding="8dp"
+                    android:text="@string/receipt_title"
+                    android:textColor="@color/bg_color_blue_11"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:background="@color/stroke_color_light_white" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/ticket_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/check_ticket_icon"
+                    android:drawablePadding="8dp"
+                    android:text="@string/check_ticket_title"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="15sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/consume_amount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:text="@string/consume_amount"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/consume_amount_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:gravity="center_vertical"
+                android:text="@string/unit_yuan"
+                android:textColor="@color/text_color_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/consume_amount_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/consume_amount_unit"
+                android:layout_toRightOf="@id/consume_amount_title"
+                android:background="@drawable/edit_text_white_bg"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:hint="@string/input_amount"
+                android:inputType="number|numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/text_color_orange"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/app_divder_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/out_discount_amount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:text="@string/no_discount_amount"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/out_discount_amount_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:gravity="center_vertical"
+                android:text="@string/unit_yuan"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/out_discount_amount_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/out_discount_amount_unit"
+                android:layout_toRightOf="@id/out_discount_amount_title"
+                android:background="@drawable/edit_text_white_bg"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:hint="@string/input_amount"
+                android:inputType="number|numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/text_color_orange"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/scan_code_generate"
+            android:layout_width="232dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/receipt_blue_shape"
+            android:gravity="center"
+            android:text="@string/generate_recipient_qrcode"
+            android:textColor="@color/recipient_select_color"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/scan_code_recipient_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="21dp"
+            android:gravity="center"
+            android:text="@string/qrcode_recipient"
+            android:textColor="@color/bg_color_blue_11"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

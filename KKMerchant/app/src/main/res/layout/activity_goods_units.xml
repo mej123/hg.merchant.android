@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+
+    <Button
+        android:id="@+id/goods_unit_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+    <top.ftas.ftaswidget.view.RecyclerScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/goods_unit_confirm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <top.ftas.ftaswidget.view.MaxRecyclerView
+                android:id="@+id/goods_unit_regular_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:drawableLeft="@mipmap/dish_add"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_add"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <top.ftas.ftaswidget.view.MaxRecyclerView
+                android:id="@+id/goods_unit_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white" />
+        </LinearLayout>
+
+    </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+
+</RelativeLayout>

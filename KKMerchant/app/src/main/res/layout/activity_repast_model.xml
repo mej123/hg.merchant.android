@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg_color">
+
+    <TextView
+        android:id="@+id/repast_model_title"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:background="@color/bg_color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:text="@string/manage_model"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/repast_model"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_toRightOf="@id/repast_model_title"
+        android:background="@color/bg_color_white"
+        android:drawablePadding="8dp"
+        android:drawableRight="@mipmap/forward"
+        android:gravity="center_vertical|right"
+        android:paddingRight="14dp"
+        android:text="@string/manage_model"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="14sp" />
+
+</RelativeLayout>

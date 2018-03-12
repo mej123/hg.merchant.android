@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/confirm_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="@string/consume_manage_hint"
+        android:textColor="@color/text_color_light_gray"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+
+        <TextView
+            android:id="@+id/average_consume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/average_consume"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/average_consume_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"
+            android:src="@drawable/checkbox_selector" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_average_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+
+        <TextView
+            android:id="@+id/setting_average_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/setting_amount"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/setting_average_amount"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_bg_white"
+            android:gravity="right|center_vertical"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:paddingRight="14dp"
+            android:textColor="@color/text_color_light_black"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/bg_color_white">
+
+
+        <TextView
+            android:id="@+id/min_consume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/min_consume"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/min_consume_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="14dp"
+            android:src="@drawable/checkbox_selector"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_min_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+
+        <TextView
+            android:id="@+id/setting_min_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/setting_amount"
+            android:textColor="@color/text_color_gray"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/setting_min_amount"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edit_text_bg_white"
+            android:gravity="right|center_vertical"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:paddingRight="14dp"
+            android:textColor="@color/text_color_light_black"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/confirm_consume_manage"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+</LinearLayout>

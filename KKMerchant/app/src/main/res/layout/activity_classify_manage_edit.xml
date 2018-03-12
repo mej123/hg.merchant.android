@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <top.ftas.ftaswidget.springview.SpringView
+        android:id="@+id/classify_manage_edit_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/classify_manage_edit_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_white"
+            android:paddingLeft="14dp" />
+    </top.ftas.ftaswidget.springview.SpringView>
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/classify_manage_bottom"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="23dp"
+            android:drawableTop="@mipmap/classify_manage_empty"
+            android:text="@string/classify_manage_empty"
+            android:textColor="@color/text_color_light_coffee"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

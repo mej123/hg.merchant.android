@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_store_goods_manager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/goods_tab"
+        android:layout_width="100dp"
+        android:layout_height="103dp">
+
+        <ImageView
+            android:id="@+id/goods_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/goods_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/discount_icon_integer"
+            android:gravity="center"
+            android:textColor="@color/text_color_white"
+            android:textSize="13sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/goods_tab"
+        android:background="@color/bg_color_white">
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/goods_name"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/good_type_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/goods_type_left_icon" />
+            <!--android:background="@mipmap/goods_type_rect_icon"-->
+            <TextView
+                android:id="@+id/goods_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textColor="@color/text_color_white"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/good_type_right_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/goods_type_right_icon" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/goods_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goods_name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:textColor="@color/text_color_medium_black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/goods_sale_change"
+            android:layout_width="57dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/text_color_blue"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/goods_state_change"
+            android:layout_width="57dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@id/goods_sale_change"
+            android:gravity="center"
+            android:textColor="@color/text_color_light_red"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/goods_state"
+            android:layout_below="@id/goods_state"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@id/goods_state_change"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:textColor="@color/text_color_red"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

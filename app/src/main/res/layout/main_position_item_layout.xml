@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pos_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/position_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="15dp"
+            android:textColor="@color/main_tab_item_color_selector" />
+        //52*4
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="26dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/stroke_color_blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/position_percent"
+        android:layout_width="30dp"
+        android:layout_height="12dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/pos_tab"
+        android:background="@drawable/main_tab_item_icon_position_selector"
+        android:textColor="@color/text_color_white"
+        android:textSize="10dp" />
+</RelativeLayout>

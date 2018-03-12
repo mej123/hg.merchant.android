@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/item_tab"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <include
+                android:id="@+id/tab_item_main_page"
+                layout="@layout/main_tab_item_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/tab_item_store"
+                layout="@layout/main_tab_item_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/tab_item_data"
+                layout="@layout/main_tab_item_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/tab_item_personal"
+                layout="@layout/main_tab_item_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/stroke_color" />
+    </RelativeLayout>
+
+
+</FrameLayout>

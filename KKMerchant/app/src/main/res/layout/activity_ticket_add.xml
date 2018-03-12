@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/top_actionbar_bg_color" />
+
+            <include
+                layout="@layout/item_choose_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/close_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/get_ticket_close_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/get_ticket_close_time"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/get_ticket_close_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/get_ticket_close_time_title"
+                android:drawablePadding="6dp"
+                android:drawableRight="@mipmap/forward"
+                android:gravity="right|center_vertical"
+                android:hint="@string/no_setting"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_divder_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ticket_store_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white">
+
+
+            <TextView
+                android:id="@+id/ticket_store_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/ticket_store_num"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/ticket_store_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/ticket_store_title"
+                android:drawablePadding="6dp"
+                android:drawableRight="@mipmap/forward"
+                android:gravity="right|center_vertical"
+                android:hint="@string/no_setting"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/app_divder_color" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ticket_cost_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <TextView
+                android:id="@+id/ticket_cost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/ticket_cost"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ticket_cost_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:text="@string/unit_yuan"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ticket_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/ticket_cost_unit"
+                android:layout_toRightOf="@id/goods_original_price_title"
+                android:background="@drawable/edit_text_white_bg"
+                android:gravity="right|center_vertical"
+                android:hint="@string/ticket_input_money"
+                android:inputType="number|numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color_white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/service_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:textColor="@color/bg_color_red_4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/service_fee_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45dp"
+                android:layout_toLeftOf="@id/service_fee"
+                android:textColor="@color/bg_color_red_4"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divder_color" />
+
+        <RelativeLayout
+            android:id="@+id/certification_cost_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/bg_color_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <TextView
+                android:id="@+id/certification_cost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="@string/certification_cost"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/certification_cost_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:text="@string/unit_yuan"
+                android:textColor="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/certification_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/certification_cost_unit"
+                android:layout_toRightOf="@id/goods_original_price_title"
+                android:background="@drawable/edit_text_white_bg"
+                android:gravity="right|center_vertical"
+                android:hint="@string/ticket_input_money"
+                android:inputType="number|numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/confirm_release"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/top_actionbar_bg_color"
+            android:gravity="center"
+            android:text="@string/confirm_release"
+            android:textColor="@color/text_color_white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</ScrollView>

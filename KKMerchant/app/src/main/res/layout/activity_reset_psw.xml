@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_new_pwd_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:scaleType="center"
+            android:src="@mipmap/close_input" />
+
+        <EditText
+            android:id="@+id/pwd_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toLeftOf="@id/iv_new_pwd_close"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/new_pwd"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/select_color"
+            android:textColorHint="#a1a1a5"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="14dp"
+        android:background="@color/app_divder_color" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/bg_color_white">
+
+        <ImageView
+            android:id="@+id/iv_ret_pwd_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:scaleType="center"
+            android:src="@mipmap/close_input" />
+
+        <EditText
+            android:id="@+id/pwd_ret"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toLeftOf="@id/iv_ret_pwd_close"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/renew_pwd"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/select_color"
+            android:textColorHint="#a1a1a5"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/setting_pwd_next"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/gradient_blue_shape_2"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+</LinearLayout>

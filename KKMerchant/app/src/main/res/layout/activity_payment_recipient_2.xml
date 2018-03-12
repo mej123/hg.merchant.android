@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_deep_blue"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="332dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/payment_recipient_white_shape">
+
+        <TextView
+            android:id="@+id/consume_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/consume_amount"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/consume_amount_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/unit_yuan"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/consume_amount_input"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/consume_amount_unit"
+            android:layout_toRightOf="@id/consume_amount_title"
+            android:background="@drawable/edit_text_white_bg"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="@string/input_amount"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/text_color_orange"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/consume_amount_title"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+
+        <TextView
+            android:id="@+id/out_discount_amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/no_discount_amount"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/out_discount_amount_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/unit_yuan"
+            android:textColor="@color/text_color_gray"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/out_discount_amount_input"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/out_discount_amount_unit"
+            android:layout_toRightOf="@id/out_discount_amount_title"
+            android:background="@drawable/edit_text_white_bg"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="@string/input_amount"
+            android:inputType="number|numberDecimal"
+            android:maxLines="1"
+            android:textColor="@color/text_color_orange"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/scan_code_generate"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/payment_recipient_gray_shape"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/scan_code_generate_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:src="@mipmap/scan_code_disable" />
+
+        <TextView
+            android:id="@+id/scan_code_generate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="@string/generate_qrcode"
+            android:textColor="@color/text_color_bright_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/scan_code_recipient_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@mipmap/scan_code_bottom" />
+
+</LinearLayout>

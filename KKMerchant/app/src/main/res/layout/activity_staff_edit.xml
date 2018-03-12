@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="16dp"
+                android:text="姓名"
+                android:textColor="@color/base_text_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_input_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_sale_unit"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="请输入姓名"
+                android:maxLines="1"
+                android:paddingLeft="120dp"
+                android:paddingRight="14dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_little_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btg_line_horizontal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_position"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="16dp"
+                android:text="职位"
+                android:textColor="@color/base_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_select_position"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/goods_unit_hint"
+                android:drawablePadding="9dp"
+                android:drawableRight="@mipmap/forward"
+                android:gravity="right|center_vertical"
+                android:hint="请选择职位"
+                android:maxLines="1"
+                android:paddingLeft="100dp"
+                android:paddingRight="14dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/btg_line_horizontal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="16dp"
+                android:text="电话"
+                android:textColor="@color/base_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/et_input_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_sale_unit"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="100dp"
+                android:paddingRight="14dp"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="14dp">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/person_bill_icon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:paddingLeft="9dp"
+                    android:text="权限设置"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_casher_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:text="收银管理"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_casher_management_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="未授权"
+                    android:maxLines="1"
+                    android:paddingRight="14dp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_store_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:text="店铺管理"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_store_management_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="未授权"
+                    android:maxLines="1"
+                    android:paddingRight="14dp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_data_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:text="数据管理"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_data_management_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="未授权"
+                    android:maxLines="1"
+                    android:paddingRight="14dp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_financing_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:text="财务管理"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_financing_management_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="未授权"
+                    android:maxLines="1"
+                    android:paddingRight="14dp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_operation_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="16dp"
+                    android:text="操作管理"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_operation_management_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="未授权"
+                    android:maxLines="1"
+                    android:paddingRight="14dp"
+                    android:text=""
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

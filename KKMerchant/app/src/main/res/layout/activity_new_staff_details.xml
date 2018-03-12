@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="49dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_name"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="姓名"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/input_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_sale_unit"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入姓名"
+                    android:maxLines="1"
+                    android:paddingLeft="120dp"
+                    android:paddingRight="14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_little_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="电话"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et_input_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_sale_unit"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/input_phone"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="14dp"
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_position"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="职位"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="请选择职位"
+                    android:maxLines="1"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/btg_line_horizontal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_belong_store"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:text="@string/belong_store"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_belong_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/goods_unit_hint"
+                    android:drawablePadding="9dp"
+                    android:drawableRight="@mipmap/forward"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/select_belong_store"
+                    android:maxLines="1"
+                    android:paddingLeft="100dp"
+                    android:paddingRight="14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/setting_permisson_left_icon" />
+
+
+                <TextView
+                    android:id="@+id/tv_position_permission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:paddingLeft="8dp"
+                    android:text="职位权限"
+                    android:textColor="@color/base_text_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_casher_management_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/permission_title_left_icon"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="收银管理"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pay_bill_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_pay_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="买单收银"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pay_bill"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/pay_bill_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gathering_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_gathering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="收款信息"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_gathering"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/pay_gathering_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_red_bag_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_red_bag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="红包核销"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_red_bag"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/pay_red_bag_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="订单查看"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_order"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/pay_order_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_store_management_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/permission_title_left_icon"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="店铺管理"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_store_message_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_message_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="店铺信息管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_message_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/tv_message_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_commodity_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_commodity_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="商品管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_commodity_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/commodity_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_marketing_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_marketing_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="营销管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_marketing_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/tv_marketing_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_staff_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_staff_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="员工管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_staff_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/staff_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_data_management_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/permission_title_left_icon"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="数据管理"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_rl_operating_statistics_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_operating_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="经营统计"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_operating_statistics"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/tv_operating_statistics_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pay_overview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_pay_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="支付总览"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_pay_overview"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/tv_pay_overview_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sales_situation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_sales_situation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="销量情况"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sales_situation"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="@string/tv_sales_situation_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_financing_management_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/permission_title_left_icon"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="财务管理"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_bill_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_bill_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="账单管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bill_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/bill_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_account_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_account_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="账户管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_account_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/account_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_operation_management_layouts"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/permission_title_left_icon"
+                    android:drawablePadding="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="操作管理"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_goods_list_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_goods_list_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="商品列表管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_goods_list_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/goods_list_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_opening_table_management_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_while"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_opening_table_management"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="15dp"
+                    android:text="营业桌台管理"
+                    android:textColor="@color/color02"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_opening_table_management"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="6dp"
+                    android:lineSpacingExtra="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="105dp"
+                    android:text="@string/opening_table_management_hint"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp" />
+
+                <View
+                    style="@style/line"
+                    android:layout_marginLeft="15dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/confirm_and_save"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/text_color_blue_6"
+        android:gravity="center"
+        android:text="@string/confirm_and_save"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

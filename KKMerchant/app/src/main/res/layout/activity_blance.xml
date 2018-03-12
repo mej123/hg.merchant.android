@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/clean_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bg_color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/clean"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"
+            android:src="@mipmap/forward" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/bg_color_white"
+        android:id="@+id/blance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/blance"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"
+            android:src="@mipmap/forward" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

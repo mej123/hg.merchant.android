@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+
+    <top.ftas.ftaswidget.view.RecyclerScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/header_appointment_detail" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="11dp" />
+
+            <RelativeLayout
+                android:id="@+id/dish_info"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="11dp"
+                android:background="@color/bg_color_white"
+                android:paddingLeft="14dp">
+
+                <TextView
+                    android:id="@+id/dish_info_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/advance_blue_icon"
+                    android:drawablePadding="9dp"
+                    android:gravity="center_vertical"
+                    android:text="预约菜品"
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dish_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toRightOf="@id/dish_info_title"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/app_divder_color" />
+
+            <top.ftas.ftaswidget.view.MaxRecyclerView
+                android:id="@+id/appointment_detail_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color_white" />
+
+
+            <LinearLayout
+                android:id="@+id/remark_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/bg_color_white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="14dp"
+                    android:text="备注："
+                    android:textColor="@color/text_color_light_black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/dish_remark_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:paddingLeft="14dp"
+                    android:text="无备注信息"
+                    android:textColor="@color/text_color_light_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </top.ftas.ftaswidget.view.RecyclerScrollview>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/table_arrange_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/custom_btn_bg_enabled_blue_noradius"
+            android:gravity="center"
+            android:text="安排入座"
+            android:textColor="@color/text_color_white"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/table_accept_refuse_layout"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/table_refuse_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_color_white"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/table_accept_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#325ef2"
+                android:gravity="center"
+                android:text="接受"
+                android:textColor="@color/text_color_white"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/table_refuse_layout"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/custom_btn_bg_enabled_blue_noradius"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <TextView
+                android:id="@+id/operator_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作人:"
+                android:textColor="@color/text_color_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/operator_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/operator_title"
+                android:textColor="@color/text_color_white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/operator_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/operator_name"
+                android:textColor="@color/text_color_white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/operator_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_toRightOf="@id/operator_date"
+                android:textColor="@color/text_color_white"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:id="@+id/refuse_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/operator_name"
+                android:layout_marginTop="6dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/text_color_white"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>
+

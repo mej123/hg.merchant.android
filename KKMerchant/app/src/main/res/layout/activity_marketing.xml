@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/top_actionbar_bg_color">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/custom_action_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/status_bar"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back_white_icon" />
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="2dp"
+            app:xTabDividerColor="#000"
+            app:xTabDividerGravity="center"
+            app:xTabDividerHeight="0dp"
+            app:xTabDividerWidth="0dp"
+            app:xTabDividerWidthWidthText="true"
+            app:xTabMode="fixed"
+            app:xTabPaddingTop="5dp"
+            app:xTabSelectedTextColor="@color/top_actionbar_title_color"
+            app:xTabSelectedTextSize="17sp"
+            app:xTabTextColor="@color/top_actionbar_title_color_unselected"
+            app:xTabTextSize="17sp" />
+
+        <TextView
+            android:id="@+id/custom_text_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/status_bar"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/record"
+            android:textColor="@color/text_color_white"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_divder_color" />
+    </RelativeLayout>
+
+    <top.ftas.ftaswidget.viewpager.NonSwipeableViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

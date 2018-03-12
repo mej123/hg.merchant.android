@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/tabContainer"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white">
+
+        <com.zishan.sardinemerchant.view.BottomTabItem
+            android:id="@+id/tab_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:item_text_selected_color="#4d82f0"
+            app:item_text_unselected_color="#d3d5d9"
+            app:item_num="2"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/stroke_color" />
+    </RelativeLayout>
+
+
+</FrameLayout>

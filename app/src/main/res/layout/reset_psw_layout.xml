@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_tool_bar" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        >
+
+
+        <EditText
+            android:id="@+id/pwd_ret1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="新密码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/select_color"
+            android:textColorHint="#c3c3c3"
+            android:textSize="@dimen/size_13" />
+
+        <RelativeLayout
+            android:id="@+id/rl_input_psw_layout1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="46dp">
+
+            <ImageView
+                android:id="@+id/iv_input_psw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yanjing_dakai"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+         style="@style/line"
+        android:layout_alignParentBottom="true"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        >
+
+
+        <EditText
+            android:id="@+id/pwd_ret2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="确认新密码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/select_color"
+            android:textColorHint="#c3c3c3"
+            android:textSize="@dimen/size_13" />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_queren_psw_layout2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="46dp">
+
+            <ImageView
+                android:id="@+id/iv_queren_psw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yanjing_dakai"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_submit_btn1"
+        style="@style/CustomNormalButtonStyle"
+        android:layout_marginTop="30dp"
+        android:text="下一步" />
+
+</LinearLayout>

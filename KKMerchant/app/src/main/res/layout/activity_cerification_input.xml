@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cerification_input_bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_cerification_code"
+        android:layout_width="317dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/cerification_input_shape"
+        android:gravity="center"
+        android:hint="@string/input_cerification_code_hint"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/text_color_light_black"
+        android:textColorHint="@color/text_color_gray"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/cerification_code_confirm"
+        android:layout_width="317dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/cerification_btn_bg_selector"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/confirm_ok"
+        android:textColor="@color/feedback_select_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:alpha="0.6"
+        android:text="@string/input_cerification_msg"
+        android:textColor="@color/text_color_white"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

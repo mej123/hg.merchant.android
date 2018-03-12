@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bg_color_white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/table_num_title"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/table_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:background="@color/app_divder_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bg_color_white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/table_person_num"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/table_person_num"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/edit_text_bg_white"
+            android:gravity="right|center_vertical"
+            android:hint="@string/no_setting"
+            android:inputType="number|numberDecimal"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/text_color_light_black"
+            android:textColorHint="@color/text_color_gray"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/table_start_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/text_color_light_blue"
+        android:gravity="center"
+        android:text="@string/confirm_start_table"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+</LinearLayout>

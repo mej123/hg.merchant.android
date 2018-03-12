@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <!-- MobileBasic -->
+	<action name="call" class="com.hg.ftas.func2.func.MobileBasic" method="call"/>
+
+	<!-- MobileStorage -->
+	<action name="setMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="setMemoryCache"/>
+	<action name="getMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="getMemoryCache"/>
+	<action name="removeMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="removeMemoryCache"/>
+	<action name="clearMemoryCache" class="com.hg.ftas.func2.func.MobileStorage" method="clearMemoryCache"/>
+	
+	<action name="setPreferences" class="com.hg.ftas.func2.func.MobilePreferences" method="setPreferences"/>
+	<action name="getPreferences" class="com.hg.ftas.func2.func.MobilePreferences" method="getPreferences"/>
+	
+	<!-- MobileUI -->
+	<action name="nextPageWithUrl" class="com.hg.ftas.func2.func.MobileUI" method="nextPageWithUrl"/>
+	<!--<action name="back" class="com.hg.ftas.func2.func.MobileUI" method="back"/>-->
+	
+	<!-- MobileApp -->
+	<!-- 
+	<action name="close" class="com.hg.ftas.func2.func.MobileApp" method="close"/>
+	-->
+	
+	<!-- ShareWechat -->
+	<action name="shareWechatMessage" class="com.kuku.kkgamer.func.func.ShareWechat" method="shareWechatMessage"/>
+	<action name="shareWechatTimeline" class="com.kuku.kkgamer.func.func.ShareWechat" method="shareWechatTimeline"/>
+	<action name="open" class="com.hg.ftas.func2.func.MobileNativeOpen" method="open"/>
+	<!--<action name="setTitle" class="com.hg.ftas.func2.func.MobileUI" method="setTitle"/>-->
+	
+	<!-- MobileTool -->
+	<action name="browser" class="com.hg.ftas.func2.func.MobileTool" method="browser"/>
+
+
+
+	<!-- 应用内打开网页 目前用不了-->
+	<action name="openUrl" class="com.hg.ftas.func2.func.MobileNativeOpen" method="openUrl"/>
+
+	<!--获取当前用户信息-->
+	<action name="getUser" class="com.hg.ftas.func2.func.MobileGetUser" method="getUser"/>
+
+	<!--获取当前定位信息-->
+	<action name="getLocation" class="com.hg.ftas.func2.func.MobileGetLocation" method="getLocation"/>
+	<!--获取本地图片-->
+	<action name="getImages" class="com.hg.ftas.func2.func.MobileGetImages" method="getImages"/>
+	<!--获取本地指定图片内容-->
+	<action name="getImageData" class="com.hg.ftas.func2.func.MobileGetImageData" method="getImageData"/>
+	<!--上传本地图片-->
+	<action name="uploadImages" class="com.hg.ftas.func2.func.MobileUploadImages" method="uploadImages"/>
+	<!--弹窗alert 2个按钮  弹窗confirm 3个按钮-->
+	<action name="dialog" class="com.hg.ftas.func2.func.MobileDialog" method="dialog"/>
+	<!--渐隐框-->
+	<action name="toast" class="com.hg.ftas.func2.func.MobileToast" method="toast"/>
+	<!--加载框 3s-->
+	<action name="loading" class="com.hg.ftas.func2.func.MobileLoading" method="loading"/>
+	<!--选择器-->
+	<action name="picker" class="com.hg.ftas.func2.func.MobilePicker" method="picker"/>
+	<!-- 结束当前页面 -->
+	<action name="close" class="com.hg.ftas.func2.func.MobileNativeClose" method="close"/>
+	<action name="sendApi" class="com.hg.ftas.func2.func.MobileSendApi" method="sendApi"/>
+
+	<action name="resume" class="com.hg.ftas.func2.func.MobileResume" method="resume"/>
+</actions>

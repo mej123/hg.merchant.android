@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white">
+
+    <TextView
+        android:id="@+id/store_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color_light_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/store_selected_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:src="@mipmap/store_selected_icon"
+        android:visibility="gone"/>
+
+</RelativeLayout>

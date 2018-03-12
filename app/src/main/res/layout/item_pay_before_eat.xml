@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white"
+    android:paddingBottom="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="24dp"
+    android:paddingTop="14dp">
+<!-- 这里的paddingTop不一定 为14dp-->
+
+    <LinearLayout
+        android:id="@+id/table_name_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <top.ftas.ftaswidget.view.CircleView
+            android:id="@+id/order_tag"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:draw_color="#ff9900" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="桌号:"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15dp" />
+
+        <!-- 距离左边的间距是多少 -->
+        <TextView
+            android:id="@+id/table_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A102"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_time_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_name_tab"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单时间:"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="12dp" />
+        <!-- 距离左边的间距是多少 -->
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5分钟"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_time_tab"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款金额:"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="12dp" />
+        <!-- 距离左边的间距是多少 -->
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!--text_color_light_gray-->
+
+    <!-- 距离上边界是多少 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        >
+
+        <!-- 左边距 和 右边距 是多少-->
+        <RelativeLayout
+            android:id="@+id/order_num_tab"
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/main_stroke_blue_shape"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="编号:"
+                android:textColor="@color/text_color_blue"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="001"
+                android:textColor="@color/text_color_blue"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+
+        <!-- 距离上方的距离-->
+        <TextView
+            android:layout_below="@id/order_num_tab"
+            android:id="@+id/output_order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="11dp"
+            android:drawableRight="@mipmap/arrow_right"
+            android:layout_alignParentRight="true"
+            android:text="未出菜品2件"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:background="@color/app_bg_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/arrived_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/arrived_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_little_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divder_color" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_arrived_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divder_color" />
+
+    <TextView
+        android:id="@+id/arrived_remark"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@null"
+        android:gravity="top|left"
+        android:padding="14dp"
+        android:textColor="@color/text_color_light_black"
+        android:textColorHint="@color/text_color_light_gray"
+        android:textSize="14sp" />
+
+
+
+
+</LinearLayout>

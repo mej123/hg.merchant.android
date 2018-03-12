@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color">
+
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/order_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_color_white"
+        app:tabPaddingStart="30dp"
+        app:xTabDisplayNum="4"
+        app:xTabDividerColor="@color/divder_light_white"
+        app:xTabDividerGravity="center"
+        app:xTabDividerHeight="10dp"
+        app:xTabDividerWidth="1dp"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="@color/text_color_light_black"
+        app:xTabSelectedTextSize="15sp"
+        app:xTabTextBold="false"
+        app:xTabTextColor="@color/text_color_light_coffee"
+        app:xTabTextSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="50dp"
+        android:background="@color/app_divder_color" />
+
+    <RelativeLayout
+        android:id="@+id/store_order_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="51dp">
+
+
+        <TextView
+            android:id="@+id/store_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_light_coffee"
+            android:textSize="13sp" />
+
+
+        <ImageView
+            android:id="@+id/store_order_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@mipmap/time_select_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divder_light_white" />
+    </RelativeLayout>
+
+    <top.ftas.ftaswidget.viewpager.NonSwipeableViewPager
+        android:id="@+id/order_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="91dp" />
+
+    <com.zishan.sardinemerchant.view.DropMenu
+        android:id="@+id/drop_menu_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp" />
+
+</FrameLayout>

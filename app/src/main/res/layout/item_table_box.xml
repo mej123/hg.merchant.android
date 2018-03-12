@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/hall_tag_icon"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/table_box_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="118dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="29dp">
+
+        <TextView
+            android:id="@+id/table_box_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大厅"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/table_box_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未设置"
+                android:textColor="@color/text_color_light_coffee"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/next_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

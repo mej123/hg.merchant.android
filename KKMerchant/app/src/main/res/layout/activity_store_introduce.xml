@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <top.ftas.ftaswidget.view.CustomEditText
+        android:id="@+id/custom_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@color/bg_color_white"
+        android:gravity="left|top"
+        app:input_text_color="@color/text_color_light_black"
+        app:input_text_hint="@string/store_introduce_hint"
+        app:input_text_hint_color="@color/text_color_gray"
+        app:input_text_line_spacing="6dp"
+        app:input_text_max="30"
+        app:input_text_size="13"
+        app:padding_bottom="14dp"
+        app:padding_left="14dp"
+        app:padding_right="14dp"
+        app:padding_top="14dp"
+        app:show_padding_bottom="14dp"
+        app:show_padding_right="14dp"
+        app:show_text_color="@color/text_color_little_black"
+        app:show_text_size="12" />
+
+    <View
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/confirm_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_blue_shape_3"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/text_color_white"
+        android:textSize="16sp" />
+
+</LinearLayout>

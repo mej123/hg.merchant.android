@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingTop="9dp">
+
+        <ImageView
+            android:id="@+id/goods_menu_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/store_next_icon" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/goods_option_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/goods_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/all"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 商品列表 -->
+
+        <top.ftas.ftaswidget.springview.SpringView
+            android:id="@+id/goods_springview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/goods_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </top.ftas.ftaswidget.springview.SpringView>
+
+        <include
+            android:id="@+id/empty_layout"
+            layout="@layout/empty_add_goods_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+</LinearLayout>

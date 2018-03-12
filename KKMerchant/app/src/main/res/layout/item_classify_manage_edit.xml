@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/classify_manage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color_white">
+
+    <LinearLayout
+        android:id="@+id/classify_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/classify_tag_icon"
+            android:layout_width="5dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/rect_blue" />
+
+        <TextView
+            android:id="@+id/classify_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="top"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/classify_goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classify_tag"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="3dp"
+        android:gravity="left|top"
+        android:textColor="@color/text_color_light_coffee"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/classify_edit_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/edit_icon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_divder_color" />
+</RelativeLayout>
+

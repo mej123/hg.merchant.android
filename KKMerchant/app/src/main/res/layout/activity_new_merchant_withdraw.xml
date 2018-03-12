@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_bind_bank_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:background="@color/bg_while">
+
+            <ImageView
+                android:id="@+id/iv_bank_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+               />
+
+            <TextView
+                android:id="@+id/tv_arrive_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/iv_bank_icon"
+                android:textColor="@color/color02"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_bank_card_withdraw_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/iv_arrow"
+                android:textColor="@color/bank_card_withdraw_state"
+                android:textSize="12sp" />
+
+            <View
+                style="@style/line"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/bg_while"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/withdraw_money_sum"
+            android:textColor="#1f2427"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/withdraw_state"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:text="@string/hint_text"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_money_icon"
+            android:textColor="@color/withdraw_state_color"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/withdraw_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/bg_while"
+            android:paddingBottom="8dp"
+            android:paddingTop="15dp"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:id="@+id/tv_money_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:text="¥"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="24dp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/et_input_withdraw_money_sum"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@+id/tv_sale_unit"
+                android:layout_toRightOf="@+id/tv_money_icon"
+                android:background="@color/bg_while"
+                android:hint="@string/withdraw_to_card_number"
+                android:inputType="number|numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/text_color_light_black"
+                android:textColorHint="@color/text_color_gray"
+                android:textSize="12dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_beyond_quota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/beyond_enable_money"
+                android:visibility="gone"
+                android:textColor="@color/withdraw_state_color" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/line"
+            android:layout_marginLeft="14dp" />
+
+        <TextView
+            android:id="@+id/tv_enable_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@color/bg_while"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="可提现金额："
+            android:textColor="#a1a1a5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_hint_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/hint_message"
+            android:textColor="#7f8a95"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="43dp"
+            android:background="@drawable/login_new_confirm_bg"
+            android:gravity="center"
+            android:text="@string/withdraw"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="@string/arrive_account_time"
+            android:textColor="#7f8a95"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="44dp"
+            android:background="@color/bg_while">
+
+
+            <ImageView
+                android:id="@+id/iv_deposit_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:src="@mipmap/deposit_current_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/iv_deposit_current"
+                android:text="@string/last_withdraw_time"
+                android:textColor="@color/color02"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/last_record_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

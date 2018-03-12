@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycle_store_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_while"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_tables_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="A11(包厢)" />
+
+
+    <TextView
+        android:id="@+id/tv_take_state"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="已消费" />
+
+    <View style="@style/line" />
+
+</RelativeLayout>

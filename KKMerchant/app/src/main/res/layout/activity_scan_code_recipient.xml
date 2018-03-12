@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/scan_code_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/custom_action_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/status_bar"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back_white_icon" />
+
+        <TextView
+            android:id="@+id/custom_text_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/status_bar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="二维码收款"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="277dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/scan_code_recipient_shape"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/scan_code_recipient_title"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginLeft="13dp"
+            android:drawableLeft="@mipmap/scan_code_ok"
+            android:drawablePadding="11dp"
+            android:gravity="center_vertical"
+            android:text="二维码收款"
+            android:textColor="@color/text_color_light_black"
+            android:textSize="15sp" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/app_divder_color" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="扫一扫向我付款"
+            android:textColor="@color/text_color_light_gray"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/qr_icon"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_divder_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/recipient_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:text="支付中..."
+                android:textColor="@color/text_color_medium_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/consume_amount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="消费金额:"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/consume_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/consume_amount_title"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/consume_amount_out_discount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/consume_amount_title"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="6dp"
+                android:text="不参与优惠金额:"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/consume_amount_out_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/consume_amount_title"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/consume_amount_out_discount_title"
+                android:textColor="@color/text_color_light_black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

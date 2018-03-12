@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_all_store_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_all_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/all_store"
+            android:textColor="@color/color02"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/filtrate_icon"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/all_store_select_icon" />
+
+        <TextView
+            android:id="@+id/tv_filtrate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="@string/filtrate"
+            android:textColor="@color/filtrate_color"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/filtrate_icon"
+            android:layout_toStartOf="@+id/filtrate_icon" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_staff_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_all_store_layout"
+        android:layout_marginBottom="49dp"
+        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/withdraw_list_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/all_staff_recycle_view"
+        android:background="@color/bg_while"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            style="@style/line"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="114dp"
+            android:src="@mipmap/staff_list_no_date_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="@string/new_no_staff_message"
+            android:textColor="@color/stroke_color_light_coffee"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_above="@+id/tv_staff_add"
+                android:layout_alignParentTop="true"
+                android:background="#ff6699" />
+
+            <TextView
+                android:id="@+id/tv_staff_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_while"
+                android:gravity="center"
+                android:text="员工添加"
+                android:textColor="@color/color02"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_position_manager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_blue_shape_3"
+            android:gravity="center"
+            android:text="职位管理"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl_all_store_layout">
+
+        <com.zishan.sardinemerchant.view.DropMenu
+            android:id="@+id/drop_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</RelativeLayout>

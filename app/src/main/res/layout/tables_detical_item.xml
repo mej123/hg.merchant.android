@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_layout"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/bg_while">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_icon"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="脆皮烤鸭"
+        android:textColor="#1f2447"
+        android:textSize="@dimen/size_15" />
+
+    <TextView
+        android:id="@+id/tv_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="¥18"
+        android:textColor="#f3c31e"
+        android:textSize="@dimen/size_11" />
+
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="1"
+        android:textSize="@dimen/size_12" />
+
+
+    <View
+        style="@style/line"
+        android:layout_alignLeft="@+id/tv_endTime"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hint_message"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:textColor="#7f8a95"
+            android:textSize="11sp" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <!--输入验证码  -->
+            <RelativeLayout
+                android:id="@+id/rl_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:background="@color/bg_while"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/et_input_band_card_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_sale_unit"
+                    android:background="@color/bg_while"
+                    android:gravity="center_vertical"
+                    android:hint="输入验证码"
+                    android:maxLines="1"
+                    android:paddingLeft="14dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color_light_black"
+                    android:textColorHint="@color/text_color_gray"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_verify_code_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/delete_button"
+                    android:visibility="invisible" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="75dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/gradient_blue_shape_1"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="获取验证码"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/size_12" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_quit"
+            android:layout_marginTop="33dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_blue_shape_2"
+            android:gravity="center"
+            android:text="@string/quit"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

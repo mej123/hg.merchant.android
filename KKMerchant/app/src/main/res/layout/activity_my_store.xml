@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/app_bg_color"
+    android:layout_height="match_parent">
+
+    <top.ftas.ftaswidget.view.DropDownMenus
+        android:id="@+id/drop_down_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dddividerColor="@color/app_divder_color"
+        app:ddmaskColor="#7f000000"
+        app:ddmenuBackgroundColor="#ffffff"
+        app:ddmenuSelectedIcon="@mipmap/arrow_dir_top_icon"
+        app:ddmenuTextSize="13sp"
+        app:ddmenuUnselectedIcon="@mipmap/arrow_dir_bottom_icon"
+        app:ddtextSelectedColor="@color/top_actionbar_bg_color"
+        app:ddtextUnselectedColor="@color/text_color_light_black"
+        app:ddunderlineColor="@color/app_divder_color"
+        app:ddIsUsePopMenuHeightPercent="true"
+        app:ddpopMenuHeightPercent="0.6"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_while">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="14dp"
+            android:text="2017.11.25~2017.11.26"
+            android:textColor="#1f2427"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_entry_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="14dp"
+            android:text="入账时间："
+            android:textColor="#7f8a95"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/entry_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_time"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/tv_entry_time_hint" />
+
+        <TextView
+            android:id="@+id/entry_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="14dp"
+            android:text="+500.00元"
+            android:textColor="#1f2427"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/line"
+            android:layout_marginLeft="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

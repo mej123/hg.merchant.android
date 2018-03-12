@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/bg_color_white"
+        android:gravity="center_horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/dish_tab_layout"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color_white"
+            app:tabBackground="@null"
+            app:tabIndicatorColor="@null"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/text_color_selected_tab_store"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dish_divder"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/stroke_color_light_white" />
+
+    <top.ftas.ftaswidget.viewpager.NonSwipeableViewPager
+        android:id="@+id/dish_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/empty_layout"
+        layout="@layout/empty_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</LinearLayout>
+
